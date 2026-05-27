@@ -1,0 +1,64 @@
+{
+    "CONST": {
+        "DEVICE": "0, 1",
+        "NUM_WORKERS": 8,
+        "N_INPUT_POINTS": 2048
+    },
+    "DATASET": {
+        "TEST_DATASET": "ShapeNet",
+        "TRAIN_DATASET": "ShapeNet"
+    },
+    "DATASETS": {
+        "COMPLETION3D": {
+            "CATEGORY_FILE_PATH": "./datasets/Completion3D.json",
+            "COMPLETE_POINTS_PATH": "/path/to/datasets/Completion3D/%s/gt/%s/%s.h5",
+            "PARTIAL_POINTS_PATH": "/path/to/datasets/Completion3D/%s/partial/%s/%s.h5"
+        },
+        "SHAPENET": {
+            "CATEGORY_FILE_PATH": "/home/tepper/base/realpc/difficult/ours.json",
+            "COMPLETE_POINTS_PATH": "/home/tepper/base/realpc/difficult/%s/complete/%s/%s.pcd",
+            "N_POINTS": 5000,
+            "N_RENDERINGS": 245,
+            "PARTIAL_POINTS_PATH": "/home/tepper/base/realpc/difficult/%s/partial/%s/%s/%03d.pcd"
+        }
+    },
+    "DIR": {
+        "CHECKPOINTS": "../results/train_pcn_Log_2026_05_14_11_14_22/checkpoints",
+        "LOGS": "../results/train_pcn_Log_2026_05_14_11_14_22",
+        "OUT_PATH": "../results/train_pcn_Log_2026_05_14_11_14_22",
+        "TEST_PATH": "../test"
+    },
+    "NETWORK": {
+        "UPSAMPLE_FACTORS": [
+            1,
+            4,
+            8
+        ]
+    },
+    "TEST": {
+        "METRIC_NAME": "ChamferDistance"
+    },
+    "TRAIN": {
+        "BATCH_SIZE": 4,
+        "BETAS": [
+            0.9,
+            0.999
+        ],
+        "GAMMA": 0.5,
+        "LEARNING_RATE": 0.0001,
+        "LR_DECAY": 150,
+        "LR_DECAY_STEP": 50,
+        "LR_MILESTONES": [
+            50,
+            100,
+            150,
+            200,
+            250
+        ],
+        "N_EPOCHS": 400,
+        "SAVE_FREQ": 25,
+        "WARMUP_EPOCHS": 20,
+        "WARMUP_STEPS": 200,
+        "WEIGHT_DECAY": 0
+    }
+}
