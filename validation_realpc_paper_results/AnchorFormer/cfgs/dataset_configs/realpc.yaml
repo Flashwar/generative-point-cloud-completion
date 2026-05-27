@@ -1,0 +1,7 @@
+NAME: Catenary
+CATEGORY_FILE_PATH: /realpc/difficult/ours.json
+N_POINTS: 5000
+N_RENDERINGS: 245
+PARTIAL_POINTS_PATH: /realpc/difficult/%s/partial/%s/%s/%03d.pcd
+COMPLETE_POINTS_PATH: /realpc/difficult/%s/complete/%s/%s.pcd
+CARS: FALSE
