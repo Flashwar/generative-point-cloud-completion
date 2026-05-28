@@ -1,0 +1,113 @@
+2026-05-17 18:06:46,883 - PoinTr - INFO - Copy the Config file from ./cfgs/ours_models/PoinTr.yaml to ./experiments/PoinTr/ours_models/test_test_full_pointr_v2/config.yaml
+2026-05-17 18:06:46,883 - PoinTr - INFO - args.config : ./cfgs/ours_models/PoinTr.yaml
+2026-05-17 18:06:46,883 - PoinTr - INFO - args.launcher : none
+2026-05-17 18:06:46,884 - PoinTr - INFO - args.local_rank : 0
+2026-05-17 18:06:46,884 - PoinTr - INFO - args.num_workers : 4
+2026-05-17 18:06:46,884 - PoinTr - INFO - args.seed : 0
+2026-05-17 18:06:46,884 - PoinTr - INFO - args.deterministic : False
+2026-05-17 18:06:46,884 - PoinTr - INFO - args.sync_bn : False
+2026-05-17 18:06:46,884 - PoinTr - INFO - args.exp_name : test_test_full_pointr_v2
+2026-05-17 18:06:46,884 - PoinTr - INFO - args.start_ckpts : None
+2026-05-17 18:06:46,884 - PoinTr - INFO - args.ckpts : ./experiments/PoinTr/ours_models/realpc_full_pointr_v2/ckpt-best.pth
+2026-05-17 18:06:46,884 - PoinTr - INFO - args.val_freq : 1
+2026-05-17 18:06:46,884 - PoinTr - INFO - args.resume : False
+2026-05-17 18:06:46,884 - PoinTr - INFO - args.test : True
+2026-05-17 18:06:46,884 - PoinTr - INFO - args.mode : None
+2026-05-17 18:06:46,884 - PoinTr - INFO - args.experiment_path : ./experiments/PoinTr/ours_models/test_test_full_pointr_v2
+2026-05-17 18:06:46,884 - PoinTr - INFO - args.tfboard_path : ./experiments/PoinTr/ours_models/TFBoard/test_test_full_pointr_v2
+2026-05-17 18:06:46,884 - PoinTr - INFO - args.log_name : PoinTr
+2026-05-17 18:06:46,884 - PoinTr - INFO - args.use_gpu : True
+2026-05-17 18:06:46,884 - PoinTr - INFO - args.distributed : False
+2026-05-17 18:06:46,884 - PoinTr - INFO - config.optimizer = edict()
+2026-05-17 18:06:46,884 - PoinTr - INFO - config.optimizer.type : AdamW
+2026-05-17 18:06:46,884 - PoinTr - INFO - config.optimizer.kwargs = edict()
+2026-05-17 18:06:46,884 - PoinTr - INFO - config.optimizer.kwargs.lr : 0.0001
+2026-05-17 18:06:46,885 - PoinTr - INFO - config.optimizer.kwargs.weight_decay : 0.0005
+2026-05-17 18:06:46,885 - PoinTr - INFO - config.scheduler = edict()
+2026-05-17 18:06:46,885 - PoinTr - INFO - config.scheduler.type : LambdaLR
+2026-05-17 18:06:46,885 - PoinTr - INFO - config.scheduler.kwargs = edict()
+2026-05-17 18:06:46,885 - PoinTr - INFO - config.scheduler.kwargs.decay_step : 21
+2026-05-17 18:06:46,885 - PoinTr - INFO - config.scheduler.kwargs.lr_decay : 0.9
+2026-05-17 18:06:46,885 - PoinTr - INFO - config.scheduler.kwargs.lowest_decay : 0.02
+2026-05-17 18:06:46,885 - PoinTr - INFO - config.bnmscheduler = edict()
+2026-05-17 18:06:46,885 - PoinTr - INFO - config.bnmscheduler.type : Lambda
+2026-05-17 18:06:46,885 - PoinTr - INFO - config.bnmscheduler.kwargs = edict()
+2026-05-17 18:06:46,885 - PoinTr - INFO - config.bnmscheduler.kwargs.decay_step : 21
+2026-05-17 18:06:46,885 - PoinTr - INFO - config.bnmscheduler.kwargs.bn_decay : 0.5
+2026-05-17 18:06:46,885 - PoinTr - INFO - config.bnmscheduler.kwargs.bn_momentum : 0.9
+2026-05-17 18:06:46,885 - PoinTr - INFO - config.bnmscheduler.kwargs.lowest_decay : 0.01
+2026-05-17 18:06:46,885 - PoinTr - INFO - config.dataset = edict()
+2026-05-17 18:06:46,885 - PoinTr - INFO - config.dataset.train = edict()
+2026-05-17 18:06:46,885 - PoinTr - INFO - config.dataset.train._base_ = edict()
+2026-05-17 18:06:46,885 - PoinTr - INFO - config.dataset.train._base_.NAME : Catenary
+2026-05-17 18:06:46,885 - PoinTr - INFO - config.dataset.train._base_.CATEGORY_FILE_PATH : /home/tepper/base/realpc/difficult/ours.json
+2026-05-17 18:06:46,885 - PoinTr - INFO - config.dataset.train._base_.N_POINTS : 5000
+2026-05-17 18:06:46,886 - PoinTr - INFO - config.dataset.train._base_.N_RENDERINGS : 245
+2026-05-17 18:06:46,886 - PoinTr - INFO - config.dataset.train._base_.PARTIAL_POINTS_PATH : /home/tepper/base/realpc/difficult/%s/partial/%s/%s/%03d.pcd
+2026-05-17 18:06:46,886 - PoinTr - INFO - config.dataset.train._base_.COMPLETE_POINTS_PATH : /home/tepper/base/realpc/difficult/%s/complete/%s/%s.pcd
+2026-05-17 18:06:46,886 - PoinTr - INFO - config.dataset.train._base_.CARS : False
+2026-05-17 18:06:46,886 - PoinTr - INFO - config.dataset.train.others = edict()
+2026-05-17 18:06:46,886 - PoinTr - INFO - config.dataset.train.others.subset : train
+2026-05-17 18:06:46,886 - PoinTr - INFO - config.dataset.train.others.bs : 4
+2026-05-17 18:06:46,886 - PoinTr - INFO - config.dataset.val = edict()
+2026-05-17 18:06:46,886 - PoinTr - INFO - config.dataset.val._base_ = edict()
+2026-05-17 18:06:46,886 - PoinTr - INFO - config.dataset.val._base_.NAME : Catenary
+2026-05-17 18:06:46,886 - PoinTr - INFO - config.dataset.val._base_.CATEGORY_FILE_PATH : /home/tepper/base/realpc/difficult/ours.json
+2026-05-17 18:06:46,886 - PoinTr - INFO - config.dataset.val._base_.N_POINTS : 5000
+2026-05-17 18:06:46,886 - PoinTr - INFO - config.dataset.val._base_.N_RENDERINGS : 245
+2026-05-17 18:06:46,886 - PoinTr - INFO - config.dataset.val._base_.PARTIAL_POINTS_PATH : /home/tepper/base/realpc/difficult/%s/partial/%s/%s/%03d.pcd
+2026-05-17 18:06:46,886 - PoinTr - INFO - config.dataset.val._base_.COMPLETE_POINTS_PATH : /home/tepper/base/realpc/difficult/%s/complete/%s/%s.pcd
+2026-05-17 18:06:46,886 - PoinTr - INFO - config.dataset.val._base_.CARS : False
+2026-05-17 18:06:46,886 - PoinTr - INFO - config.dataset.val.others = edict()
+2026-05-17 18:06:46,886 - PoinTr - INFO - config.dataset.val.others.subset : test
+2026-05-17 18:06:46,886 - PoinTr - INFO - config.dataset.test = edict()
+2026-05-17 18:06:46,886 - PoinTr - INFO - config.dataset.test._base_ = edict()
+2026-05-17 18:06:46,886 - PoinTr - INFO - config.dataset.test._base_.NAME : Catenary
+2026-05-17 18:06:46,886 - PoinTr - INFO - config.dataset.test._base_.CATEGORY_FILE_PATH : /home/tepper/base/realpc/difficult/ours.json
+2026-05-17 18:06:46,887 - PoinTr - INFO - config.dataset.test._base_.N_POINTS : 5000
+2026-05-17 18:06:46,887 - PoinTr - INFO - config.dataset.test._base_.N_RENDERINGS : 245
+2026-05-17 18:06:46,887 - PoinTr - INFO - config.dataset.test._base_.PARTIAL_POINTS_PATH : /home/tepper/base/realpc/difficult/%s/partial/%s/%s/%03d.pcd
+2026-05-17 18:06:46,887 - PoinTr - INFO - config.dataset.test._base_.COMPLETE_POINTS_PATH : /home/tepper/base/realpc/difficult/%s/complete/%s/%s.pcd
+2026-05-17 18:06:46,887 - PoinTr - INFO - config.dataset.test._base_.CARS : False
+2026-05-17 18:06:46,887 - PoinTr - INFO - config.dataset.test.others = edict()
+2026-05-17 18:06:46,887 - PoinTr - INFO - config.dataset.test.others.subset : test
+2026-05-17 18:06:46,887 - PoinTr - INFO - config.model = edict()
+2026-05-17 18:06:46,887 - PoinTr - INFO - config.model.NAME : PoinTr
+2026-05-17 18:06:46,887 - PoinTr - INFO - config.model.num_pred : 5000
+2026-05-17 18:06:46,887 - PoinTr - INFO - config.model.num_query : 224
+2026-05-17 18:06:46,887 - PoinTr - INFO - config.model.knn_layer : 1
+2026-05-17 18:06:46,887 - PoinTr - INFO - config.model.trans_dim : 384
+2026-05-17 18:06:46,887 - PoinTr - INFO - config.total_bs : 4
+2026-05-17 18:06:46,887 - PoinTr - INFO - config.step_per_update : 1
+2026-05-17 18:06:46,887 - PoinTr - INFO - config.max_epoch : 300
+2026-05-17 18:06:46,887 - PoinTr - INFO - config.consider_metric : CDL1
+2026-05-17 18:06:46,887 - PoinTr - INFO - Distributed training: False
+2026-05-17 18:06:46,887 - PoinTr - INFO - Set random seed to 0, deterministic: False
+2026-05-17 18:06:46,889 - PoinTr - INFO - Tester start ... 
+2026-05-17 18:06:47,972 - PoinTr - INFO - Loading weights from ./experiments/PoinTr/ours_models/realpc_full_pointr_v2/ckpt-best.pth...
+2026-05-17 18:06:48,257 - PoinTr - INFO - ckpts @ 257 epoch( performance = {'F-Score': 0.452374049159847, 'CDL1': 39.62260130544975, 'CDL2': 13.11340821641508, 'EMDistance': 0.0})
+2026-05-17 18:06:54,080 - PoinTr - INFO - [TEST] Metrics = ['0.4524', '39.6226', '13.1134', '0.0000']
+2026-05-17 18:06:54,081 - PoinTr - INFO - ============================ TEST RESULTS ============================
+2026-05-17 18:06:54,081 - PoinTr - INFO - Taxonomy	#Sample	F-Score	CDL1	CDL2	EMDistance	#ModelName	
+2026-05-17 18:06:54,081 - PoinTr - INFO - chine_0	84	0.583 	10.193 	0.496 	0.000 	chine_0	
+2026-05-17 18:06:54,081 - PoinTr - INFO - chine_1	12	0.469 	15.746 	1.434 	0.000 	chine_1	
+2026-05-17 18:06:54,081 - PoinTr - INFO - chine_2	12	0.480 	16.054 	1.615 	0.000 	chine_2	
+2026-05-17 18:06:54,082 - PoinTr - INFO - chine_3	3	0.474 	14.336 	1.156 	0.000 	chine_3	
+2026-05-17 18:06:54,082 - PoinTr - INFO - dutch_0	15	0.477 	22.510 	5.109 	0.000 	dutch_0	
+2026-05-17 18:06:54,082 - PoinTr - INFO - dutch_1	11	0.413 	32.489 	8.129 	0.000 	dutch_1	
+2026-05-17 18:06:54,082 - PoinTr - INFO - dutch_2	2	0.524 	13.775 	1.480 	0.000 	dutch_2	
+2026-05-17 18:06:54,082 - PoinTr - INFO - dutch_3	6	0.461 	29.454 	9.315 	0.000 	dutch_3	
+2026-05-17 18:06:54,082 - PoinTr - INFO - dutch_4	2	0.402 	31.415 	6.790 	0.000 	dutch_4	
+2026-05-17 18:06:54,082 - PoinTr - INFO - hung_0	1	0.411 	56.214 	16.970 	0.000 	hung_0	
+2026-05-17 18:06:54,082 - PoinTr - INFO - hung_1	1	0.328 	79.811 	25.017 	0.000 	hung_1	
+2026-05-17 18:06:54,083 - PoinTr - INFO - hung_2	5	0.396 	81.983 	38.278 	0.000 	hung_2	
+2026-05-17 18:06:54,083 - PoinTr - INFO - hung_3	12	0.371 	83.249 	34.515 	0.000 	hung_3	
+2026-05-17 18:06:54,083 - PoinTr - INFO - hung_4	4	0.377 	94.320 	46.069 	0.000 	hung_4	
+2026-05-17 18:06:54,083 - PoinTr - INFO - hung_5	1	0.411 	58.693 	19.159 	0.000 	hung_5	
+2026-05-17 18:06:54,083 - PoinTr - INFO - hung_6	2	0.388 	52.175 	17.224 	0.000 	hung_6	
+2026-05-17 18:06:54,083 - PoinTr - INFO - hung_7	2	0.360 	82.694 	37.400 	0.000 	hung_7	
+2026-05-17 18:06:54,083 - PoinTr - INFO - sncf_0	6	0.550 	10.657 	0.546 	0.000 	sncf_0	
+2026-05-17 18:06:54,083 - PoinTr - INFO - sncf_1	2	0.664 	12.719 	1.885 	0.000 	sncf_1	
+2026-05-17 18:06:54,084 - PoinTr - INFO - sncf_2	9	0.599 	9.314 	0.430 	0.000 	sncf_2	
+2026-05-17 18:06:54,084 - PoinTr - INFO - sncf_3	1	0.362 	24.272 	2.364 	0.000 	sncf_3	
+2026-05-17 18:06:54,084 - PoinTr - INFO - Overall 		0.452 	39.623 	13.113 	0.000 	
