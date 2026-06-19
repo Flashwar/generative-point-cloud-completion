@@ -1,0 +1,556 @@
+[
+    {
+        "taxonomy_id": "chine_0",
+        "taxonomy_name": "chine_0",
+        "train": [
+            "049cdb2f-53dd-4e7e-a3d6-cf9ff9687225",
+            "078acd0d-3941-4cb3-8bf9-2d677f32681e",
+            "0b3de39d-bd4b-410a-b6c1-6b6aa9859b1c",
+            "11069e7b-c98a-4fb6-b9ff-24371789c176",
+            "136a7be3-a6b7-4566-a311-f8ea5176be5d",
+            "1390381e-a86f-4ed7-8685-673ffe4c4aed",
+            "16795cd9-b3b8-42b1-acf0-73e1a6a77c0a",
+            "179ba793-ac09-4e60-80a1-91560b8e484e",
+            "21203c82-3bad-4233-8d68-c4986900b681",
+            "21b2da04-ae1d-4bd1-8200-9b5c83fdf29c",
+            "226a794c-c390-4d82-8dc2-5dc483ddd43a",
+            "24725df9-1f1c-407c-b75f-c2bed8cfe89b",
+            "24a51c37-fa93-4dd3-b4d5-089fde1a0e78",
+            "25e62ba2-b20a-44cd-83ca-55d2e799c00c",
+            "2aa2c178-5234-44f6-99ea-8f4cdbc6eac5",
+            "2be29039-c751-4500-bf70-bbc2391bc36c",
+            "2d66710a-4728-4c72-b9ef-f2cd05f0a3a1",
+            "2e98881f-4a99-48d1-a975-f427f3251a59",
+            "36589596-3ee5-4bb3-ad0c-95599d190c4d",
+            "3bcceb96-276a-486e-a26c-cddaa0df2a58",
+            "3c2704ea-f655-4574-a8ae-1b859d48c7da",
+            "3c9b708d-1d6e-4a6b-8f7b-0e18737965fe",
+            "4082689d-978c-442c-af18-25c4e773f2b9",
+            "42085427-3a41-4ef8-a8f9-19d3bab8e632",
+            "42c8711d-5d96-40a0-b80e-cf8071884526",
+            "44405a37-56b1-4e5b-b094-314a60793487",
+            "44cd75ef-03de-4545-95a7-e372af91dec3",
+            "4c863d04-e289-49f2-8ffe-68f29ed90d42",
+            "5259c4c2-3dec-4039-b275-31137de679aa",
+            "563ce1e7-e23b-4506-8dc3-387423955c68",
+            "57298c49-d095-41cd-943e-8e5662822ddf",
+            "5bd0a6c5-9848-490e-9744-f190d1e95217",
+            "5e1ee34c-66df-45a3-8324-79ca1e63d24c",
+            "60c0f58a-1730-472f-b8c1-f811fd2fab06",
+            "66127ebb-d524-43cf-8516-6a4c00ddbd16",
+            "6a4dfce6-6115-480e-9f64-667dff790d74",
+            "6a921480-bc7d-4369-b873-f372d40da12f",
+            "70c17808-cf3a-43e4-8956-906702fcef97",
+            "7227c96c-236c-4675-b479-51353018f7bc",
+            "77108a78-92ea-451c-812c-451378fc2253",
+            "7cca971f-7630-4886-b252-560646f8f285",
+            "80ae17cd-6750-4c9d-a04b-c7746eb9b0c8",
+            "841f5aa7-7790-4087-b87a-64bf6021c56c",
+            "84be6036-e6cc-4fba-a58e-08920814a855",
+            "86ddb64c-02bb-4669-9949-56e7220f2ed2",
+            "8d20f4c7-d482-479b-89a9-af2d1d96a08d",
+            "926629b3-4213-4b1f-b9b3-3965c6692c06",
+            "93556a65-f36e-4f81-aca5-e26d69981f8a",
+            "943d0b0d-f464-4fa4-9462-65934f946e8e",
+            "94da4d47-277c-46b0-9f70-ea0aa2726563",
+            "95e3f035-104f-4636-bb3f-354513505837",
+            "95eca5ad-4a59-45aa-834e-f54f385b950e",
+            "97f53c86-5ad2-4d12-ad49-72eb8cbe5024",
+            "9872fed7-7393-4320-9cab-7a2b8377105f",
+            "9d415df2-03b5-42b3-9c93-0c6985a8ed70",
+            "9d61aec5-9b60-4247-bc69-6514e5d3e20e",
+            "a14bc12c-cba4-4a5b-81a5-34cf424b3508",
+            "a285b482-5f2d-401a-844d-0eb409ee4c51",
+            "a3048bfe-d571-401a-bc1c-e8ddd8316dea",
+            "affe71ed-96c2-4e27-96a7-ec0bc6fb9cd1",
+            "b3153924-86c0-4c45-a5ef-26090a84fb5d",
+            "b576d6cb-0fdf-4be6-b57c-f03f418a4e45",
+            "b8252763-ca2b-41b7-bd11-0cebb83822dd",
+            "c13ef740-b17c-452a-bd2e-ba7ab2e5760c",
+            "c5ab4a3d-4d1e-4c6b-b402-f92839381f45",
+            "c5b47390-38a7-432f-ac3a-9d089842477e",
+            "cb4fc781-eb62-4bef-bcfd-476961abe666",
+            "cee4ffa5-9b9a-4801-80ce-d968ec37e83f",
+            "d15ed201-2f8b-455f-8d57-fc815297ded2",
+            "d3ac8af9-99e3-4adb-b0cd-38bdd99123e2",
+            "d860a716-e468-40e8-83bd-5cb393d77e1b",
+            "d8e91b73-0768-4699-b567-db49752a39d2",
+            "d94954ef-835e-4b3f-90ce-03f4c3f92542",
+            "dbd9ea75-94dd-4dec-ab03-dd51b1219040",
+            "dc5af340-dc76-4dc1-8005-3664be6ae582",
+            "dcaad0ea-47c7-4b9d-b832-bbb2b8d4714a",
+            "e3fab517-7bcb-4464-be1c-c0587518eb01",
+            "f14a2874-c208-4fc7-a8cb-1520740b6be3",
+            "f186d5fb-6228-40d7-93dc-ad35e9ee9a90",
+            "f3ccdb1a-5398-47f2-89a4-6b877e8a8a5f",
+            "f50cea41-6354-4095-acda-7146222e32df",
+            "f528ca32-08f5-4a60-bfdd-98593f6081ff",
+            "fd56d1b7-911d-4193-b82d-ad743abe9cbc",
+            "ffaba543-f0d4-4142-8184-d9bbd09ba545"
+        ],
+        "test": [
+            "04a70b74-3671-434a-a05e-cae10e967df6",
+            "051c57b9-29b0-4209-89d4-cd98ddbfd751",
+            "0cc84847-7a10-4446-b7a7-8aba324f7fe6",
+            "12ba45c1-677a-49cd-843f-f3a69a2c72e0",
+            "13cd85bc-2270-4f78-8437-4f505bf01d7a",
+            "20caa397-42a6-40f0-9784-a4814faf7beb",
+            "2f7a5126-5b11-4016-aac3-0f6c8c06637b",
+            "2f9fdca3-3f1d-413c-89a3-e9450e6cdaa7",
+            "308d02b9-8545-419c-a97b-5216d016606e",
+            "317d8d09-79ee-41c5-804b-8c39d0cfa111",
+            "33a9a61a-0d40-490e-9d21-c4c942196ced",
+            "37e1cdda-c0da-4558-8bad-a3d3adfecbea",
+            "3ba233e7-c1ca-467b-8641-1dcef46a600e",
+            "3bd5e731-ae24-43d7-9952-8a3cf04562fb",
+            "3c4d9443-da7e-436c-ab9f-e2475b1d23fa",
+            "458065e0-32f2-47ec-81f0-eba84ced8892",
+            "4ee11acb-b848-45e0-9ab5-fb9b120834a1",
+            "50e267b1-fe25-457f-886b-6bf870409208",
+            "56591bcf-d56b-494a-b41d-69aba90ebbf1",
+            "58eda9a0-606f-409f-95ce-ba12f824eb3d",
+            "5fee2e7d-3665-44e1-9a81-6a1880b69b6e",
+            "61fb2a93-52d1-40e2-b3ba-632cc1a34e14",
+            "67e909c2-47df-46d3-9348-41747b10de47",
+            "6a08f876-109c-4cc5-b648-5efbf820dd06",
+            "6b4e638d-a163-4560-a01f-4ad79e2cb3b6",
+            "6b708c44-8a3b-4183-95db-e0ae7b3d3b6d",
+            "6de38f84-ddfe-4a71-99ab-18be26acb919",
+            "6fa9e9cd-00fd-4f0f-a70d-bed9d8308caf",
+            "71967d8e-df02-47e5-af61-8d91fbaa1280",
+            "72b400ef-6fb9-40d9-a2cc-4ee57789bf34",
+            "746eab23-86ce-4bbd-b127-0544fd1375c0",
+            "74e93214-fc5f-405b-bd5d-a88b1dad622b",
+            "7b602a91-cb69-4f2e-b5f4-008d57f56368",
+            "7d9bacf6-ad47-4f85-a148-8f18eece0684",
+            "8a32644e-8380-4120-ba9a-4c479940d209",
+            "8df379cd-6881-40f6-8c24-8855a4d986e5",
+            "8e7f41c4-fd3a-4fee-bce8-830e0926e8e1",
+            "8ff2287c-4bf7-417a-972c-8566e699128f",
+            "90530dd8-67a8-4c45-9eaa-0208d136d413",
+            "91fb0d89-aec7-454b-a52d-853a1d9a6d77",
+            "93c8c0a7-be20-40e2-867c-b5368052f527",
+            "961d31ac-f02a-48dd-aba9-d95d38ce0b36",
+            "97637c02-a76d-4915-829e-fb7bf2adcbdd",
+            "9845cf66-67de-458d-ac57-daa6bffdb586",
+            "9979b1d8-7d5d-48c1-bf79-ce1d67863cc3",
+            "9fc75253-d834-4597-b9e7-c027508da12d",
+            "a3af7d67-6eda-4479-9ad5-ae90d90ea982",
+            "a4527022-0b80-45b0-8fb2-b991476dc908",
+            "a5492ea8-9e53-46e6-a8c5-98fb91764532",
+            "a9b198be-7e48-4488-b93a-9d40168f1c4c",
+            "aad8fe63-2108-463d-bdd9-469d5fb3b78b",
+            "ad63dd67-a197-42cf-8687-a4b2bdf647c4",
+            "b0d203ce-2519-4749-a921-f787349c40dd",
+            "b235024e-9fd7-49e7-9108-7c91230f3376",
+            "b6ad6fce-d182-4b2b-9c0e-378db35c0708",
+            "b92b44a2-b9ce-441e-9cb0-cf940786d152",
+            "be87ff8e-c29e-4f7c-8ceb-bcdde68b41dd",
+            "befa1f57-77dc-4abb-a309-f7e3e45d7d0b",
+            "c0434664-9952-43b4-9108-a465bb159392",
+            "c3e2b93b-1b5c-4a5f-a604-41f7f02392b4",
+            "c4ecab3f-4dd8-4bf6-ae59-5ec584c6dd3d",
+            "c633c38b-8bb2-4ccc-81c9-b32509d36c85",
+            "c7e38390-e9c6-47cc-9b7d-6e29a1f0e673",
+            "ca269cd9-2999-407a-8dbf-960be463daf5",
+            "cc805a59-623e-4536-b159-609865a0e364",
+            "ce06c14c-9ca0-4f86-8060-5264628efe09",
+            "cf3358ea-29e2-4cec-9d8d-1aab4b32e1e9",
+            "cf8412f0-7d69-4e70-8483-5cc47622ba89",
+            "d032613a-23c4-4b47-8f78-b06afe558bda",
+            "d4c6662e-afb1-4543-b427-f145cc4af9f2",
+            "d58eaad1-f3ad-4437-b5b9-843249898902",
+            "dfbd2a1f-4c23-45e1-a578-7fc99cde28f9",
+            "e060ecff-6d35-4fad-8957-f3b327e2e56b",
+            "e1c66acc-5c46-4c39-b593-06e76ed4b51a",
+            "e31d6457-c5d4-4a89-a9a6-762b4273fe32",
+            "e77ec822-f9a4-4a7f-a578-7839f9a3d2bf",
+            "ef56318f-203e-4d13-9d07-b17d5485a9ec",
+            "efffce7e-3b39-461c-840d-60f54b6e5af6",
+            "f071dfa7-51c4-4dae-83d7-5c0fcc3b55b6",
+            "f11d55df-0150-41ec-8989-ee79d1555ff7",
+            "f26cf039-a89c-4ff7-b299-10fceda1d14d",
+            "f3964192-7c96-4be1-a25c-ddb4583b38a0",
+            "fcd158d4-473d-445a-9ade-bc2af4546bc8",
+            "fdce9e8a-1e9c-450c-aa45-e7434d8d64a7"
+        ]
+    },
+    {
+        "taxonomy_id": "chine_1",
+        "taxonomy_name": "chine_1",
+        "train": [
+            "15a5bcd4-26ab-47d1-9a27-6b7cd54420d3",
+            "1b25c0c8-4569-457f-af3f-3c1fc297e4e5",
+            "2598f64a-962f-4797-a099-c9de11a9a01c",
+            "498e27fb-6809-4167-8284-e95aaa15a874",
+            "4e5c3343-98ce-428e-bf28-8cf7cff292f9",
+            "6eaa6f37-80a2-44ad-980f-a1325c445377",
+            "7948545c-67e0-49bb-a5b3-0ecefce89575",
+            "9b652167-40f1-490b-9dbb-ad19431265ff",
+            "d6d718a9-e2d0-448b-af9f-4bcf9b850723",
+            "df65638c-3ab0-43a6-b213-c15cf8b88388",
+            "ebd73f0c-a2ea-4a0b-904c-c6a30318a3ea",
+            "ebe56de1-9f50-44b6-ab7c-e3d691c20c33"
+        ],
+        "test": [
+            "07a86d93-c5b4-4a16-8638-79b7b6b2684a",
+            "30a6f670-7233-4640-afa7-e15200c044ee",
+            "3a4cc56b-0c3c-4652-8eb0-b7e885a59cce",
+            "48f507f2-f36d-42a3-9933-b7f641338afa",
+            "524a8661-3b31-410f-9403-1c8637684287",
+            "597f40ce-714f-4a79-9312-f5d01885c182",
+            "608f6747-55d0-437f-989e-d9d202f0ccf8",
+            "641a7487-72a0-49a2-bbf3-71bbd58e30a2",
+            "7d7efeda-8570-4eca-a8c6-2656a994fd62",
+            "a0be732d-93d5-4c43-8536-76d508b0b0be",
+            "b5e7132f-fe85-4f4e-95fd-b6eb34cc0ef0",
+            "d6a0abf6-100e-4961-8da0-0587a6e28a31"
+        ]
+    },
+    {
+        "taxonomy_id": "chine_2",
+        "taxonomy_name": "chine_2",
+        "train": [
+            "1efd9ff5-864d-4bdf-a8fc-084add94ec67",
+            "3dd3b091-dd43-4eb9-9b8a-73002708321f",
+            "4aa4ddd6-f687-463a-9867-9754958f2eb7",
+            "5adbfbbd-d75e-48e0-910e-7f48598b09c9",
+            "677c51a7-958e-4a19-bc26-8c7569a02302",
+            "6bc1088c-3dae-401d-b590-afccde7e4cf9",
+            "72464b53-7e84-4d15-b3ca-d030be6d1b2a",
+            "78f2f505-927a-4b58-ab9c-45d459ce1304",
+            "96318e73-29b7-473a-a01e-c92831d30ada",
+            "9e7cd0c6-723c-46c4-a4c2-34aa92b5eae0",
+            "a0148f59-7928-4d0f-a10e-1fc2104243c7",
+            "e215ce13-de99-4f5c-991a-10f018ec8480"
+        ],
+        "test": [
+            "0f2e0925-c95b-49c6-bfcd-638db4884095",
+            "14114276-4cb0-4033-8576-d57ce9d5146f",
+            "2ee82107-8a4b-4e34-a33e-9a53d7b53806",
+            "46510298-86f0-4000-a5a5-96fe1b4b912e",
+            "6f8a5d3b-d94d-45e0-8d23-9ac802276ecd",
+            "985e44aa-d5ec-482a-b807-2545332b1b60",
+            "b4fb8fed-3d9d-4939-8921-d906c6447773",
+            "c09938ae-14ee-4a2a-998b-ee7e4e71330d",
+            "cf327675-ceae-4194-bb27-372e2207337b",
+            "eaa75f4f-af00-41a1-b976-020d51e7f5e8",
+            "eb39f541-9bc4-4175-aa39-da3e082e9809",
+            "f4b35d5d-51e5-40a1-ba05-c5cae52e0662"
+        ]
+    },
+    {
+        "taxonomy_id": "chine_3",
+        "taxonomy_name": "chine_3",
+        "train": [
+            "7ae6a35e-6e5a-40a8-9eba-e3cf19ba78a3",
+            "d571b0fc-658e-4b6f-833b-9e9168f399fa",
+            "daaf20cc-539c-4d5d-b14b-35410a5374f9"
+        ],
+        "test": [
+            "4b407b35-f81b-47e0-933d-d833da7a0902",
+            "95442b68-5c61-4590-a538-b653c6f5faa1",
+            "b6d7a8d2-c0fc-4427-b2a2-2b100cf01f00"
+        ]
+    },
+    {
+        "taxonomy_id": "dutch_0",
+        "taxonomy_name": "dutch_0",
+        "train": [
+            "0b1e168f-3e6b-4a46-bd8e-314b9a2c3d62",
+            "33dd8e22-438e-4dd4-91e2-aa9950109962",
+            "4233d922-851c-4da8-86d6-3d4337e3436b",
+            "5d0ac1f5-6cdb-42f2-a80c-19978d011161",
+            "76cbdc45-dd2f-43e6-baff-107d83f8dc06",
+            "796d018d-1bd4-4c9d-91db-891f94d4e48e",
+            "821bcdcc-eea8-40ca-be0b-aa293285e8bf",
+            "aa95970f-e22c-48c4-ab92-6bec4979c92f",
+            "bd1acfca-b0a1-40d2-8ea5-f2162fe65008",
+            "d40dd109-d271-461b-aef9-4c2ed13aff66",
+            "d5444f1e-a78e-45b6-a107-784266c17590",
+            "e7c6df2b-b09a-4ecf-a47a-a0a1313a905d",
+            "e98d32dc-546c-4fbf-8799-bfa533324716",
+            "efa461cf-65d4-417c-b727-e55b61d370a1",
+            "f3aa3fff-64bd-4e1a-a098-ce66ef1e0b0a"
+        ],
+        "test": [
+            "2b3a86ba-0ea5-43db-8d37-5a009538727f",
+            "30b7ee81-c5b0-4a5f-bb59-d21dab8f3c24",
+            "543b62db-9a15-4b9a-81d7-7ae9f60cd329",
+            "550aa49e-c3d2-4add-b7a4-1c560080a428",
+            "5a251d14-201e-4812-b9db-9b380443592b",
+            "6144cd45-6320-476f-a1fb-5173e0d633fd",
+            "6172f084-79f4-44ec-9d82-1479f86e088d",
+            "7609b62b-ac40-435c-aa9d-048d5440a4fc",
+            "8414c3ef-aa03-464a-93fd-87e260fc565f",
+            "8975ee71-f63c-40e5-a1dd-b1275c9e28aa",
+            "9cd9c9ff-e1f0-4b03-9d8f-0c3b6ecb0baa",
+            "a6213c18-fda3-4c5f-8aa0-2f7bf9852873",
+            "e4cb3dc4-4387-414e-b12a-baf749baf262",
+            "ecac9483-2695-4e05-88c5-d271e09c40df",
+            "fdf00127-0f94-4ad0-85ac-0b51b089aa8a"
+        ]
+    },
+    {
+        "taxonomy_id": "dutch_1",
+        "taxonomy_name": "dutch_1",
+        "train": [
+            "0fbdca02-b8cc-4a4f-8735-0ed5733feb27",
+            "1ce2d74b-b5db-4831-b952-274385303414",
+            "20808944-ac07-4516-9b79-2caa4c044f3b",
+            "2087efc8-5933-4c52-b51c-a3bf22b8639a",
+            "37ec528b-b286-4bbc-9e77-d9c960eaac18",
+            "6d4fa041-dad2-4dd1-a4a1-be7260aa4ac5",
+            "86251536-7dcb-419a-995f-fbb124aecd33",
+            "b0237aaf-0c03-433b-8936-0be8d9c3d6da",
+            "b17d37cc-09ca-472b-8b13-c74a8981aae3",
+            "ee7a1365-185c-4508-9449-a8441118db7a",
+            "fe8afd7c-85f0-4ce5-aa5b-5a81a25df54b"
+        ],
+        "test": [
+            "1691a892-e133-4e2b-95b2-33e7e42d6da4",
+            "382a855f-f72d-40bb-a502-df0f4b0812ef",
+            "3d92a128-4a4d-496c-8285-3ae488184d14",
+            "4cc36566-1e10-4a21-9e3d-9a611caa1e69",
+            "53e26cb7-f126-4d45-8bb0-341df8d8be4f",
+            "5498d35a-84c2-409e-ae46-3f4cfeed03a6",
+            "60a95552-c477-44dd-9e92-7c6396856b11",
+            "619f37f2-92d9-4162-8521-3669aaa84fad",
+            "6a97f1e3-2137-4d97-a8fb-4b8abafd83ec",
+            "7bb61e49-9cc6-429f-925f-d87085976c49",
+            "ce28b32f-9360-4d2d-9a2e-4f94eca9a3d8"
+        ]
+    },
+    {
+        "taxonomy_id": "dutch_2",
+        "taxonomy_name": "dutch_2",
+        "train": [
+            "1028af04-1078-4aaf-add3-4b645c2b183a",
+            "8cdbe1f8-a9bf-4eca-99da-0b8b7ccab853"
+        ],
+        "test": [
+            "8c516255-3464-4456-9703-09aae1a3187f",
+            "bcf34ae6-abca-4a19-bc3f-97c205a2c237"
+        ]
+    },
+    {
+        "taxonomy_id": "dutch_3",
+        "taxonomy_name": "dutch_3",
+        "train": [
+            "11f99bc2-15d8-4b15-acfd-0b270554670c",
+            "2e5bd22a-477e-4a13-8262-48d68656f288",
+            "3e2e9c34-63c7-48e9-957e-f9fc6c61fa99",
+            "7964dae8-5590-4686-8de5-5bda0a9f2f58",
+            "a9243c65-8b95-458c-89cb-2e007b73e521",
+            "ba1dce61-005d-44d4-93f6-db00749799f9"
+        ],
+        "test": [
+            "011181b3-c0fb-4e63-b082-2cf216895dae",
+            "100283d4-f24a-4a79-8378-7e9d0926679b",
+            "8e93d93e-e169-41f6-8440-891bf368e35a",
+            "97325c59-e2bb-459b-bd2a-d841e1c5ab53",
+            "b030e9a5-49c5-4fc3-82c7-6ab479af8d11",
+            "c8e0ea59-6ba6-4728-9802-c0e888b32826"
+        ]
+    },
+    {
+        "taxonomy_id": "dutch_4",
+        "taxonomy_name": "dutch_4",
+        "train": [
+            "1c66092c-6465-44a2-ac86-781178d70f17",
+            "adc786ed-3f7d-47d2-aa2a-f01ddef462f8"
+        ],
+        "test": [
+            "695e29c5-7246-4cf6-8e5c-4c61ebfabf61",
+            "b3186ecc-baf2-4e61-920f-c4d835545bad"
+        ]
+    },
+    {
+        "taxonomy_id": "hung_0",
+        "taxonomy_name": "hung_0",
+        "train": [
+            "fadcba8b-3251-482f-940b-aea2d7d8b93a"
+        ],
+        "test": [
+            "f55345cf-63ec-4ed2-be4c-3b27b80eda70"
+        ]
+    },
+    {
+        "taxonomy_id": "hung_1",
+        "taxonomy_name": "hung_1",
+        "train": [
+            "116fbb5a-a290-466b-85dd-fc904fc9c726"
+        ],
+        "test": [
+            "9119fbf8-38de-43d7-806d-03501a9622a2"
+        ]
+    },
+    {
+        "taxonomy_id": "hung_2",
+        "taxonomy_name": "hung_2",
+        "train": [
+            "1767f231-f1f1-44a0-85ea-d08509b410a5",
+            "3fdcc4f0-62bb-4624-9568-fe49958f4050",
+            "4947b888-3242-4318-be50-74029a592cd2",
+            "dec264ed-84d5-4f5c-b1f6-86687e587692",
+            "f095d1e0-7701-408c-b3b1-efbff143f0bd"
+        ],
+        "test": [
+            "0a9f4f31-74da-4340-8210-79d5140c4e88",
+            "31de9953-08a6-4622-87cc-09239bdcc3ef",
+            "ae45351f-fb78-4ab5-bba6-4a3ac095b5b7",
+            "c68d0cfb-80bd-4474-a457-e4a2cdd7bec8",
+            "fa7d49c8-317c-44f2-87e4-c5ff79121f7d"
+        ]
+    },
+    {
+        "taxonomy_id": "hung_3",
+        "taxonomy_name": "hung_3",
+        "train": [
+            "1a18a945-db8c-4a1c-9a51-7a699e7daacf",
+            "3aa9c3d4-d4ea-4ecf-b6e7-5b8456fcf63c",
+            "60017c8b-2003-400a-9cee-d0e67d64c6d4",
+            "8be42f2a-945d-4c94-aeb6-a8035c84764f",
+            "8e408094-e3ce-4710-94ed-c903ca579615",
+            "973a9045-e92e-48b4-a1c7-fdcc8158147c",
+            "a75c1e3c-d815-4af5-8081-d776dffa4a00",
+            "b13cc0d2-eac0-4cf7-a096-53afc45b1dcb",
+            "b8b505a9-f869-4c56-a0be-564f8db8fdfc",
+            "c246c36e-fe9c-4435-b0b6-fa596907fa21",
+            "e7078fe1-19eb-4f15-9c6b-b23a66e74e94",
+            "eb40789b-d82e-44a6-a030-c8cbc2a48fc3"
+        ],
+        "test": [
+            "2c7a0b24-442e-4682-ad47-25c6a210a5d5",
+            "2f89dd90-2e8e-4963-bef7-f14c9c78e426",
+            "3fc90951-8554-42eb-9ed5-bdf7d8b1acf5",
+            "467b3012-bc90-4634-831f-a72b028b72c0",
+            "49b017c7-37ae-4ad0-a6d6-ac2d1ec160db",
+            "4f51e727-64fb-40b2-be16-5b6e2d735d4e",
+            "63e717c5-778d-4e70-ae34-c50874be55a7",
+            "6ce7eaec-45fd-4e7d-ae98-d9cb0b397d53",
+            "7d5d8912-b192-49d2-b92d-6b1a6f6e6d35",
+            "e5a035ce-8d01-4427-87f1-e8d042076b09",
+            "fbef0203-5f19-4c05-8646-d4cf133a64cc",
+            "ff4c7501-aa3a-4fa8-9559-bd297e4f222c"
+        ]
+    },
+    {
+        "taxonomy_id": "hung_4",
+        "taxonomy_name": "hung_4",
+        "train": [
+            "1c64e4ff-fb4c-4b3d-9a16-25e17b456f45",
+            "4c100e47-3f26-491b-8be2-e8f47a9bf81a",
+            "b90611c0-bffa-45a1-9efe-76b1ba9aa923",
+            "e1219032-f643-4547-b664-1af766abf3cb"
+        ],
+        "test": [
+            "0a7ba2cf-f199-449a-94e7-6d8d636f1e21",
+            "5a69a34e-5a22-4f0a-879f-b2fc6f67b43d",
+            "6572d202-091d-43e2-927f-75095e68507d",
+            "9332fe17-3160-47e2-9ca5-cb025152c45d"
+        ]
+    },
+    {
+        "taxonomy_id": "hung_5",
+        "taxonomy_name": "hung_5",
+        "train": [
+            "758ff792-af08-419e-8832-724b563ebef3"
+        ],
+        "test": [
+            "313c6ac7-4123-4e4b-9f22-3ff11eb3e8d4"
+        ]
+    },
+    {
+        "taxonomy_id": "hung_6",
+        "taxonomy_name": "hung_6",
+        "train": [
+            "a647998d-cbbd-403a-aa67-5aa1044c05d8",
+            "fcc83937-7527-47b2-b189-c5e95553be24"
+        ],
+        "test": [
+            "5347d224-d559-42d8-b0fa-db0b6d7c3ace",
+            "f9f3a78a-095d-4f98-8ae5-8532f4f7abe6"
+        ]
+    },
+    {
+        "taxonomy_id": "hung_7",
+        "taxonomy_name": "hung_7",
+        "train": [
+            "c00f6b71-0994-4cf4-846f-b48dc92e6393",
+            "cf19175e-d7e9-414d-af88-ddfa151d8f8e"
+        ],
+        "test": [
+            "3b4afd69-585a-4214-afd4-2fd106906280",
+            "813e0381-fc06-4074-b1b1-7499113bb614"
+        ]
+    },
+    {
+        "taxonomy_id": "sncf_0",
+        "taxonomy_name": "sncf_0",
+        "train": [
+            "0574bb29-19ef-4e40-beee-6e0d06385fe4",
+            "7b113e84-79c0-47bb-8ce6-d18b3f4410a5",
+            "dcc8aa67-62e5-404c-b169-f5984fac6a46",
+            "eb29b4ac-1ea2-4b8b-b425-198e7364c739",
+            "fdbd5c32-b7c3-4189-9bfc-1035b7ed0a80",
+            "fe67503e-f598-49dc-a82f-7a8ab6fc8337"
+        ],
+        "test": [
+            "277767e9-d9de-4353-ad2d-bc0338e9a5c3",
+            "61bc5556-4cea-410f-8c68-07160b394ca0",
+            "a27fa96a-8aa7-4654-b29a-1f5ad52e90c9",
+            "b6c6804f-5def-4c47-a324-546343c54fdb",
+            "ce45757e-9f03-42cc-923d-e85f30d3bba8",
+            "d1baaedf-9127-45d6-87da-69ba81a77be0"
+        ]
+    },
+    {
+        "taxonomy_id": "sncf_1",
+        "taxonomy_name": "sncf_1",
+        "train": [
+            "06d5d3f8-06d8-426f-a815-946f74b59d40",
+            "a25facc8-2b97-46d6-b7ae-b0db44ec5e1b"
+        ],
+        "test": [
+            "3e3b39b7-9ef3-4042-9cfb-05f54331c46b",
+            "43c88023-a03c-4662-85fc-de88d8e1e16e"
+        ]
+    },
+    {
+        "taxonomy_id": "sncf_2",
+        "taxonomy_name": "sncf_2",
+        "train": [
+            "0e8d4a91-a89a-4049-a50b-d5ee8275bcd9",
+            "64fe0a1b-7d8d-4d40-b068-93d1095bd253",
+            "669bd2af-1237-445e-a6a3-91c9804ee33d",
+            "70b2370c-45ff-4b91-b0b8-857f5561f55a",
+            "9a8c1670-2e5e-4147-98a5-d9183e2a5f11",
+            "af399b26-2d64-48c0-9aca-15be12ac7e35",
+            "b21673f2-cb89-4aa9-a3b9-c0e86341b5da",
+            "e49aa597-6782-4c06-a5ea-f45afecf3c86",
+            "fc77442c-c932-4681-8abc-8ed403621f42"
+        ],
+        "test": [
+            "0122644a-579f-488a-b943-7c7cd39b9ff8",
+            "603fe82a-e20a-4e28-98a7-d8ede7ef1f52",
+            "7ed191a7-25a6-4f85-bee8-85ecd259c167",
+            "ad1a3a67-a270-4127-bd26-cba0fe35b57d",
+            "ae0afa6f-d864-43f4-8f5d-d62da5c9d1b0",
+            "bcf3e023-2e97-4309-9f2f-79910c2ae0c9",
+            "c3ea3f11-9ffe-483f-b407-e4220aafbf12",
+            "c858a240-d66e-43e1-bfd6-b3f9a042e5b7",
+            "d589d489-eed6-444c-be81-7fd47e1c55cc"
+        ]
+    },
+    {
+        "taxonomy_id": "sncf_3",
+        "taxonomy_name": "sncf_3",
+        "train": [
+            "bda0a124-1398-4d10-b4c7-e23bbfa2a209"
+        ],
+        "test": [
+            "d77fc395-1057-44a0-b58a-dcc2e417817f"
+        ]
+    }
+]
