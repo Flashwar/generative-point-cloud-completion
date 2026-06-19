@@ -1,0 +1,657 @@
+2026-05-17 16:55:09,346 - AnchorFormer - INFO - Copy the Config file from ./cfgs/ours_models/AnchorFormer.yaml to ./experiments/AnchorFormer/ours_models/test_test_full_anchorformer/config.yaml
+2026-05-17 16:55:09,346 - AnchorFormer - INFO - args.config : ./cfgs/ours_models/AnchorFormer.yaml
+2026-05-17 16:55:09,346 - AnchorFormer - INFO - args.launcher : none
+2026-05-17 16:55:09,346 - AnchorFormer - INFO - args.local_rank : 0
+2026-05-17 16:55:09,347 - AnchorFormer - INFO - args.num_workers : 4
+2026-05-17 16:55:09,347 - AnchorFormer - INFO - args.seed : 0
+2026-05-17 16:55:09,347 - AnchorFormer - INFO - args.deterministic : False
+2026-05-17 16:55:09,347 - AnchorFormer - INFO - args.sync_bn : False
+2026-05-17 16:55:09,347 - AnchorFormer - INFO - args.exp_name : test_test_full_anchorformer
+2026-05-17 16:55:09,347 - AnchorFormer - INFO - args.start_ckpts : None
+2026-05-17 16:55:09,347 - AnchorFormer - INFO - args.ckpts : ./experiments/AnchorFormer/ours_models/realpc_full_anchorformer/ckpt-best.pth
+2026-05-17 16:55:09,347 - AnchorFormer - INFO - args.val_freq : 10
+2026-05-17 16:55:09,347 - AnchorFormer - INFO - args.val_interval : 50
+2026-05-17 16:55:09,347 - AnchorFormer - INFO - args.test_interval : 50
+2026-05-17 16:55:09,347 - AnchorFormer - INFO - args.resume : False
+2026-05-17 16:55:09,347 - AnchorFormer - INFO - args.test : True
+2026-05-17 16:55:09,347 - AnchorFormer - INFO - args.mode : None
+2026-05-17 16:55:09,347 - AnchorFormer - INFO - args.experiment_path : ./experiments/AnchorFormer/ours_models/test_test_full_anchorformer
+2026-05-17 16:55:09,347 - AnchorFormer - INFO - args.tfboard_path : ./experiments/AnchorFormer/ours_models/TFBoard/test_test_full_anchorformer
+2026-05-17 16:55:09,347 - AnchorFormer - INFO - args.log_name : AnchorFormer
+2026-05-17 16:55:09,347 - AnchorFormer - INFO - args.use_gpu : True
+2026-05-17 16:55:09,347 - AnchorFormer - INFO - args.distributed : False
+2026-05-17 16:55:09,347 - AnchorFormer - INFO - config.optimizer = edict()
+2026-05-17 16:55:09,347 - AnchorFormer - INFO - config.optimizer.type : AdamW
+2026-05-17 16:55:09,347 - AnchorFormer - INFO - config.optimizer.kwargs = edict()
+2026-05-17 16:55:09,347 - AnchorFormer - INFO - config.optimizer.kwargs.lr : 0.0002
+2026-05-17 16:55:09,348 - AnchorFormer - INFO - config.optimizer.kwargs.weight_decay : 0.0005
+2026-05-17 16:55:09,348 - AnchorFormer - INFO - config.scheduler = edict()
+2026-05-17 16:55:09,348 - AnchorFormer - INFO - config.scheduler.type : WarmUpCosLR
+2026-05-17 16:55:09,348 - AnchorFormer - INFO - config.scheduler.kwargs = edict()
+2026-05-17 16:55:09,348 - AnchorFormer - INFO - config.scheduler.kwargs.warmup_epoch : 20
+2026-05-17 16:55:09,348 - AnchorFormer - INFO - config.scheduler.kwargs.max_epoch : 420
+2026-05-17 16:55:09,348 - AnchorFormer - INFO - config.scheduler.kwargs.lr_max : 0.0002
+2026-05-17 16:55:09,348 - AnchorFormer - INFO - config.scheduler.kwargs.lr_min : 1e-05
+2026-05-17 16:55:09,348 - AnchorFormer - INFO - config.dataset = edict()
+2026-05-17 16:55:09,348 - AnchorFormer - INFO - config.dataset.train = edict()
+2026-05-17 16:55:09,348 - AnchorFormer - INFO - config.dataset.train._base_ = edict()
+2026-05-17 16:55:09,348 - AnchorFormer - INFO - config.dataset.train._base_.NAME : Catenary
+2026-05-17 16:55:09,348 - AnchorFormer - INFO - config.dataset.train._base_.CATEGORY_FILE_PATH : /base/realpc/difficult/ours.json
+2026-05-17 16:55:09,348 - AnchorFormer - INFO - config.dataset.train._base_.N_POINTS : 5000
+2026-05-17 16:55:09,348 - AnchorFormer - INFO - config.dataset.train._base_.N_RENDERINGS : 245
+2026-05-17 16:55:09,348 - AnchorFormer - INFO - config.dataset.train._base_.PARTIAL_POINTS_PATH : /base/realpc/difficult/%s/partial/%s/%s/%03d.pcd
+2026-05-17 16:55:09,348 - AnchorFormer - INFO - config.dataset.train._base_.COMPLETE_POINTS_PATH : /base/realpc/difficult/%s/complete/%s/%s.pcd
+2026-05-17 16:55:09,348 - AnchorFormer - INFO - config.dataset.train._base_.CARS : False
+2026-05-17 16:55:09,348 - AnchorFormer - INFO - config.dataset.train.others = edict()
+2026-05-17 16:55:09,348 - AnchorFormer - INFO - config.dataset.train.others.subset : train
+2026-05-17 16:55:09,348 - AnchorFormer - INFO - config.dataset.train.others.bs : 4
+2026-05-17 16:55:09,348 - AnchorFormer - INFO - config.dataset.val = edict()
+2026-05-17 16:55:09,349 - AnchorFormer - INFO - config.dataset.val._base_ = edict()
+2026-05-17 16:55:09,349 - AnchorFormer - INFO - config.dataset.val._base_.NAME : Catenary
+2026-05-17 16:55:09,349 - AnchorFormer - INFO - config.dataset.val._base_.CATEGORY_FILE_PATH : /base/realpc/difficult/ours.json
+2026-05-17 16:55:09,349 - AnchorFormer - INFO - config.dataset.val._base_.N_POINTS : 5000
+2026-05-17 16:55:09,349 - AnchorFormer - INFO - config.dataset.val._base_.N_RENDERINGS : 245
+2026-05-17 16:55:09,349 - AnchorFormer - INFO - config.dataset.val._base_.PARTIAL_POINTS_PATH : /base/realpc/difficult/%s/partial/%s/%s/%03d.pcd
+2026-05-17 16:55:09,349 - AnchorFormer - INFO - config.dataset.val._base_.COMPLETE_POINTS_PATH : /base/realpc/difficult/%s/complete/%s/%s.pcd
+2026-05-17 16:55:09,349 - AnchorFormer - INFO - config.dataset.val._base_.CARS : False
+2026-05-17 16:55:09,349 - AnchorFormer - INFO - config.dataset.val.others = edict()
+2026-05-17 16:55:09,349 - AnchorFormer - INFO - config.dataset.val.others.subset : test
+2026-05-17 16:55:09,349 - AnchorFormer - INFO - config.dataset.test = edict()
+2026-05-17 16:55:09,349 - AnchorFormer - INFO - config.dataset.test._base_ = edict()
+2026-05-17 16:55:09,349 - AnchorFormer - INFO - config.dataset.test._base_.NAME : Catenary
+2026-05-17 16:55:09,349 - AnchorFormer - INFO - config.dataset.test._base_.CATEGORY_FILE_PATH : /base/realpc/difficult/ours.json
+2026-05-17 16:55:09,349 - AnchorFormer - INFO - config.dataset.test._base_.N_POINTS : 5000
+2026-05-17 16:55:09,349 - AnchorFormer - INFO - config.dataset.test._base_.N_RENDERINGS : 245
+2026-05-17 16:55:09,349 - AnchorFormer - INFO - config.dataset.test._base_.PARTIAL_POINTS_PATH : /base/realpc/difficult/%s/partial/%s/%s/%03d.pcd
+2026-05-17 16:55:09,349 - AnchorFormer - INFO - config.dataset.test._base_.COMPLETE_POINTS_PATH : /base/realpc/difficult/%s/complete/%s/%s.pcd
+2026-05-17 16:55:09,349 - AnchorFormer - INFO - config.dataset.test._base_.CARS : False
+2026-05-17 16:55:09,349 - AnchorFormer - INFO - config.dataset.test.others = edict()
+2026-05-17 16:55:09,349 - AnchorFormer - INFO - config.dataset.test.others.subset : test
+2026-05-17 16:55:09,349 - AnchorFormer - INFO - config.model = edict()
+2026-05-17 16:55:09,350 - AnchorFormer - INFO - config.model.NAME : AnchorFormer
+2026-05-17 16:55:09,350 - AnchorFormer - INFO - config.model.num_pred : 5000
+2026-05-17 16:55:09,350 - AnchorFormer - INFO - config.model.num_query : 256
+2026-05-17 16:55:09,350 - AnchorFormer - INFO - config.model.knn_layer : 0
+2026-05-17 16:55:09,350 - AnchorFormer - INFO - config.model.trans_dim : 384
+2026-05-17 16:55:09,350 - AnchorFormer - INFO - config.model.num_encoder_blk : 8
+2026-05-17 16:55:09,350 - AnchorFormer - INFO - config.model.num_decoder_blk : 6
+2026-05-17 16:55:09,350 - AnchorFormer - INFO - config.model.sparse_expansion_lambda : 0.5
+2026-05-17 16:55:09,350 - AnchorFormer - INFO - config.model.dense_expansion_lambda : 1.2
+2026-05-17 16:55:09,350 - AnchorFormer - INFO - config.loss = edict()
+2026-05-17 16:55:09,350 - AnchorFormer - INFO - config.loss.sparse_loss_weight : 1.0
+2026-05-17 16:55:09,350 - AnchorFormer - INFO - config.loss.dense_loss_weight : 1.0
+2026-05-17 16:55:09,350 - AnchorFormer - INFO - config.loss.sparse_penalty_weight : 0.1
+2026-05-17 16:55:09,350 - AnchorFormer - INFO - config.loss.dense_penalty_weight : 0.05
+2026-05-17 16:55:09,350 - AnchorFormer - INFO - config.total_bs : 4
+2026-05-17 16:55:09,350 - AnchorFormer - INFO - config.step_per_update : 1
+2026-05-17 16:55:09,350 - AnchorFormer - INFO - config.max_epoch : 420
+2026-05-17 16:55:09,350 - AnchorFormer - INFO - config.consider_metric : CDL1
+2026-05-17 16:55:09,350 - AnchorFormer - INFO - Distributed training: False
+2026-05-17 16:55:09,350 - AnchorFormer - INFO - Set random seed to 0, deterministic: False
+2026-05-17 16:55:09,351 - AnchorFormer - INFO - Tester start ... 
+2026-05-17 16:55:09,769 - AnchorFormer - INFO - AnchorFormer(
+  (base_model): AnchorTransformer(
+    (grouper): DGCNN_Grouper(
+      (input_trans): Conv1d(3, 8, kernel_size=(1,), stride=(1,))
+      (layer1): Sequential(
+        (0): Conv2d(16, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): GroupNorm(4, 32, eps=1e-05, affine=True)
+        (2): LeakyReLU(negative_slope=0.2)
+      )
+      (layer2): Sequential(
+        (0): Conv2d(64, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): GroupNorm(4, 64, eps=1e-05, affine=True)
+        (2): LeakyReLU(negative_slope=0.2)
+      )
+      (layer3): Sequential(
+        (0): Conv2d(128, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): GroupNorm(4, 64, eps=1e-05, affine=True)
+        (2): LeakyReLU(negative_slope=0.2)
+      )
+      (layer4): Sequential(
+        (0): Conv2d(128, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): GroupNorm(4, 128, eps=1e-05, affine=True)
+        (2): LeakyReLU(negative_slope=0.2)
+      )
+    )
+    (pos_embed): Sequential(
+      (0): Conv1d(3, 128, kernel_size=(1,), stride=(1,))
+      (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): LeakyReLU(negative_slope=0.2)
+      (3): Conv1d(128, 384, kernel_size=(1,), stride=(1,))
+    )
+    (input_proj): Sequential(
+      (0): Conv1d(128, 384, kernel_size=(1,), stride=(1,))
+      (1): BatchNorm1d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): LeakyReLU(negative_slope=0.2)
+      (3): Conv1d(384, 384, kernel_size=(1,), stride=(1,))
+    )
+    (encoder): ModuleList(
+      (0): EncoderBlock(
+        (norm1): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+        (self_attn): Attention(
+          (qkv): Linear(in_features=384, out_features=1152, bias=False)
+          (attn_drop): Dropout(p=0.0, inplace=False)
+          (proj): Linear(in_features=384, out_features=384, bias=True)
+          (proj_drop): Dropout(p=0.0, inplace=False)
+        )
+        (drop_path): Identity()
+        (norm2): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+        (norm_q): Identity()
+        (norm_k): Identity()
+        (attn): GeoCrossAttention(
+          (q_map): Identity()
+          (k_map): Identity()
+          (attn_drop): Dropout(p=0.0, inplace=False)
+          (x_map): Identity()
+        )
+        (mlp): Mlp(
+          (fc1): Linear(in_features=384, out_features=768, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=768, out_features=384, bias=True)
+          (drop): Dropout(p=0.0, inplace=False)
+        )
+        (generate_anchor): SubFold(
+          (folding1): Sequential(
+            (0): Conv1d(387, 192, kernel_size=(1,), stride=(1,))
+            (1): BatchNorm1d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (2): ReLU(inplace=True)
+            (3): Conv1d(192, 96, kernel_size=(1,), stride=(1,))
+            (4): BatchNorm1d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (5): ReLU(inplace=True)
+            (6): Conv1d(96, 3, kernel_size=(1,), stride=(1,))
+          )
+          (folding2): Sequential(
+            (0): Conv1d(387, 192, kernel_size=(1,), stride=(1,))
+            (1): BatchNorm1d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (2): ReLU(inplace=True)
+            (3): Conv1d(192, 96, kernel_size=(1,), stride=(1,))
+            (4): BatchNorm1d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (5): ReLU(inplace=True)
+            (6): Conv1d(96, 3, kernel_size=(1,), stride=(1,))
+          )
+        )
+        (generate_feature): Sequential(
+          (0): Conv1d(128, 256, kernel_size=(1,), stride=(1,))
+          (1): LeakyReLU(negative_slope=0.2)
+          (2): Conv1d(256, 64, kernel_size=(1,), stride=(1,))
+          (3): LeakyReLU(negative_slope=0.2)
+          (4): Conv1d(64, 16, kernel_size=(1,), stride=(1,))
+        )
+      )
+      (1): EncoderBlock(
+        (norm1): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+        (self_attn): Attention(
+          (qkv): Linear(in_features=384, out_features=1152, bias=False)
+          (attn_drop): Dropout(p=0.0, inplace=False)
+          (proj): Linear(in_features=384, out_features=384, bias=True)
+          (proj_drop): Dropout(p=0.0, inplace=False)
+        )
+        (drop_path): Identity()
+        (norm2): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+        (norm_q): Identity()
+        (norm_k): Identity()
+        (attn): GeoCrossAttention(
+          (q_map): Identity()
+          (k_map): Identity()
+          (attn_drop): Dropout(p=0.0, inplace=False)
+          (x_map): Identity()
+        )
+        (mlp): Mlp(
+          (fc1): Linear(in_features=384, out_features=768, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=768, out_features=384, bias=True)
+          (drop): Dropout(p=0.0, inplace=False)
+        )
+        (generate_anchor): SubFold(
+          (folding1): Sequential(
+            (0): Conv1d(387, 192, kernel_size=(1,), stride=(1,))
+            (1): BatchNorm1d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (2): ReLU(inplace=True)
+            (3): Conv1d(192, 96, kernel_size=(1,), stride=(1,))
+            (4): BatchNorm1d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (5): ReLU(inplace=True)
+            (6): Conv1d(96, 3, kernel_size=(1,), stride=(1,))
+          )
+          (folding2): Sequential(
+            (0): Conv1d(387, 192, kernel_size=(1,), stride=(1,))
+            (1): BatchNorm1d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (2): ReLU(inplace=True)
+            (3): Conv1d(192, 96, kernel_size=(1,), stride=(1,))
+            (4): BatchNorm1d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (5): ReLU(inplace=True)
+            (6): Conv1d(96, 3, kernel_size=(1,), stride=(1,))
+          )
+        )
+        (generate_feature): Sequential(
+          (0): Conv1d(144, 256, kernel_size=(1,), stride=(1,))
+          (1): LeakyReLU(negative_slope=0.2)
+          (2): Conv1d(256, 64, kernel_size=(1,), stride=(1,))
+          (3): LeakyReLU(negative_slope=0.2)
+          (4): Conv1d(64, 16, kernel_size=(1,), stride=(1,))
+        )
+      )
+      (2): EncoderBlock(
+        (norm1): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+        (self_attn): Attention(
+          (qkv): Linear(in_features=384, out_features=1152, bias=False)
+          (attn_drop): Dropout(p=0.0, inplace=False)
+          (proj): Linear(in_features=384, out_features=384, bias=True)
+          (proj_drop): Dropout(p=0.0, inplace=False)
+        )
+        (drop_path): Identity()
+        (norm2): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+        (norm_q): Identity()
+        (norm_k): Identity()
+        (attn): GeoCrossAttention(
+          (q_map): Identity()
+          (k_map): Identity()
+          (attn_drop): Dropout(p=0.0, inplace=False)
+          (x_map): Identity()
+        )
+        (mlp): Mlp(
+          (fc1): Linear(in_features=384, out_features=768, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=768, out_features=384, bias=True)
+          (drop): Dropout(p=0.0, inplace=False)
+        )
+        (generate_anchor): SubFold(
+          (folding1): Sequential(
+            (0): Conv1d(387, 192, kernel_size=(1,), stride=(1,))
+            (1): BatchNorm1d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (2): ReLU(inplace=True)
+            (3): Conv1d(192, 96, kernel_size=(1,), stride=(1,))
+            (4): BatchNorm1d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (5): ReLU(inplace=True)
+            (6): Conv1d(96, 3, kernel_size=(1,), stride=(1,))
+          )
+          (folding2): Sequential(
+            (0): Conv1d(387, 192, kernel_size=(1,), stride=(1,))
+            (1): BatchNorm1d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (2): ReLU(inplace=True)
+            (3): Conv1d(192, 96, kernel_size=(1,), stride=(1,))
+            (4): BatchNorm1d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (5): ReLU(inplace=True)
+            (6): Conv1d(96, 3, kernel_size=(1,), stride=(1,))
+          )
+        )
+        (generate_feature): Sequential(
+          (0): Conv1d(160, 256, kernel_size=(1,), stride=(1,))
+          (1): LeakyReLU(negative_slope=0.2)
+          (2): Conv1d(256, 64, kernel_size=(1,), stride=(1,))
+          (3): LeakyReLU(negative_slope=0.2)
+          (4): Conv1d(64, 16, kernel_size=(1,), stride=(1,))
+        )
+      )
+      (3): EncoderBlock(
+        (norm1): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+        (self_attn): Attention(
+          (qkv): Linear(in_features=384, out_features=1152, bias=False)
+          (attn_drop): Dropout(p=0.0, inplace=False)
+          (proj): Linear(in_features=384, out_features=384, bias=True)
+          (proj_drop): Dropout(p=0.0, inplace=False)
+        )
+        (drop_path): Identity()
+        (norm2): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+        (norm_q): Identity()
+        (norm_k): Identity()
+        (attn): GeoCrossAttention(
+          (q_map): Identity()
+          (k_map): Identity()
+          (attn_drop): Dropout(p=0.0, inplace=False)
+          (x_map): Identity()
+        )
+        (mlp): Mlp(
+          (fc1): Linear(in_features=384, out_features=768, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=768, out_features=384, bias=True)
+          (drop): Dropout(p=0.0, inplace=False)
+        )
+        (generate_anchor): SubFold(
+          (folding1): Sequential(
+            (0): Conv1d(387, 192, kernel_size=(1,), stride=(1,))
+            (1): BatchNorm1d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (2): ReLU(inplace=True)
+            (3): Conv1d(192, 96, kernel_size=(1,), stride=(1,))
+            (4): BatchNorm1d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (5): ReLU(inplace=True)
+            (6): Conv1d(96, 3, kernel_size=(1,), stride=(1,))
+          )
+          (folding2): Sequential(
+            (0): Conv1d(387, 192, kernel_size=(1,), stride=(1,))
+            (1): BatchNorm1d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (2): ReLU(inplace=True)
+            (3): Conv1d(192, 96, kernel_size=(1,), stride=(1,))
+            (4): BatchNorm1d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (5): ReLU(inplace=True)
+            (6): Conv1d(96, 3, kernel_size=(1,), stride=(1,))
+          )
+        )
+        (generate_feature): Sequential(
+          (0): Conv1d(176, 256, kernel_size=(1,), stride=(1,))
+          (1): LeakyReLU(negative_slope=0.2)
+          (2): Conv1d(256, 64, kernel_size=(1,), stride=(1,))
+          (3): LeakyReLU(negative_slope=0.2)
+          (4): Conv1d(64, 16, kernel_size=(1,), stride=(1,))
+        )
+      )
+      (4): EncoderBlock(
+        (norm1): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+        (self_attn): Attention(
+          (qkv): Linear(in_features=384, out_features=1152, bias=False)
+          (attn_drop): Dropout(p=0.0, inplace=False)
+          (proj): Linear(in_features=384, out_features=384, bias=True)
+          (proj_drop): Dropout(p=0.0, inplace=False)
+        )
+        (drop_path): Identity()
+        (norm2): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+        (norm_q): Identity()
+        (norm_k): Identity()
+        (attn): GeoCrossAttention(
+          (q_map): Identity()
+          (k_map): Identity()
+          (attn_drop): Dropout(p=0.0, inplace=False)
+          (x_map): Identity()
+        )
+        (mlp): Mlp(
+          (fc1): Linear(in_features=384, out_features=768, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=768, out_features=384, bias=True)
+          (drop): Dropout(p=0.0, inplace=False)
+        )
+        (generate_anchor): SubFold(
+          (folding1): Sequential(
+            (0): Conv1d(387, 192, kernel_size=(1,), stride=(1,))
+            (1): BatchNorm1d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (2): ReLU(inplace=True)
+            (3): Conv1d(192, 96, kernel_size=(1,), stride=(1,))
+            (4): BatchNorm1d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (5): ReLU(inplace=True)
+            (6): Conv1d(96, 3, kernel_size=(1,), stride=(1,))
+          )
+          (folding2): Sequential(
+            (0): Conv1d(387, 192, kernel_size=(1,), stride=(1,))
+            (1): BatchNorm1d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (2): ReLU(inplace=True)
+            (3): Conv1d(192, 96, kernel_size=(1,), stride=(1,))
+            (4): BatchNorm1d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (5): ReLU(inplace=True)
+            (6): Conv1d(96, 3, kernel_size=(1,), stride=(1,))
+          )
+        )
+        (generate_feature): Sequential(
+          (0): Conv1d(192, 256, kernel_size=(1,), stride=(1,))
+          (1): LeakyReLU(negative_slope=0.2)
+          (2): Conv1d(256, 64, kernel_size=(1,), stride=(1,))
+          (3): LeakyReLU(negative_slope=0.2)
+          (4): Conv1d(64, 16, kernel_size=(1,), stride=(1,))
+        )
+      )
+      (5): EncoderBlock(
+        (norm1): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+        (self_attn): Attention(
+          (qkv): Linear(in_features=384, out_features=1152, bias=False)
+          (attn_drop): Dropout(p=0.0, inplace=False)
+          (proj): Linear(in_features=384, out_features=384, bias=True)
+          (proj_drop): Dropout(p=0.0, inplace=False)
+        )
+        (drop_path): Identity()
+        (norm2): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+        (norm_q): Identity()
+        (norm_k): Identity()
+        (attn): GeoCrossAttention(
+          (q_map): Identity()
+          (k_map): Identity()
+          (attn_drop): Dropout(p=0.0, inplace=False)
+          (x_map): Identity()
+        )
+        (mlp): Mlp(
+          (fc1): Linear(in_features=384, out_features=768, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=768, out_features=384, bias=True)
+          (drop): Dropout(p=0.0, inplace=False)
+        )
+        (generate_anchor): SubFold(
+          (folding1): Sequential(
+            (0): Conv1d(387, 192, kernel_size=(1,), stride=(1,))
+            (1): BatchNorm1d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (2): ReLU(inplace=True)
+            (3): Conv1d(192, 96, kernel_size=(1,), stride=(1,))
+            (4): BatchNorm1d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (5): ReLU(inplace=True)
+            (6): Conv1d(96, 3, kernel_size=(1,), stride=(1,))
+          )
+          (folding2): Sequential(
+            (0): Conv1d(387, 192, kernel_size=(1,), stride=(1,))
+            (1): BatchNorm1d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (2): ReLU(inplace=True)
+            (3): Conv1d(192, 96, kernel_size=(1,), stride=(1,))
+            (4): BatchNorm1d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (5): ReLU(inplace=True)
+            (6): Conv1d(96, 3, kernel_size=(1,), stride=(1,))
+          )
+        )
+        (generate_feature): Sequential(
+          (0): Conv1d(208, 256, kernel_size=(1,), stride=(1,))
+          (1): LeakyReLU(negative_slope=0.2)
+          (2): Conv1d(256, 64, kernel_size=(1,), stride=(1,))
+          (3): LeakyReLU(negative_slope=0.2)
+          (4): Conv1d(64, 16, kernel_size=(1,), stride=(1,))
+        )
+      )
+      (6): EncoderBlock(
+        (norm1): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+        (self_attn): Attention(
+          (qkv): Linear(in_features=384, out_features=1152, bias=False)
+          (attn_drop): Dropout(p=0.0, inplace=False)
+          (proj): Linear(in_features=384, out_features=384, bias=True)
+          (proj_drop): Dropout(p=0.0, inplace=False)
+        )
+        (drop_path): Identity()
+        (norm2): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+        (norm_q): Identity()
+        (norm_k): Identity()
+        (attn): GeoCrossAttention(
+          (q_map): Identity()
+          (k_map): Identity()
+          (attn_drop): Dropout(p=0.0, inplace=False)
+          (x_map): Identity()
+        )
+        (mlp): Mlp(
+          (fc1): Linear(in_features=384, out_features=768, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=768, out_features=384, bias=True)
+          (drop): Dropout(p=0.0, inplace=False)
+        )
+        (generate_anchor): SubFold(
+          (folding1): Sequential(
+            (0): Conv1d(387, 192, kernel_size=(1,), stride=(1,))
+            (1): BatchNorm1d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (2): ReLU(inplace=True)
+            (3): Conv1d(192, 96, kernel_size=(1,), stride=(1,))
+            (4): BatchNorm1d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (5): ReLU(inplace=True)
+            (6): Conv1d(96, 3, kernel_size=(1,), stride=(1,))
+          )
+          (folding2): Sequential(
+            (0): Conv1d(387, 192, kernel_size=(1,), stride=(1,))
+            (1): BatchNorm1d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (2): ReLU(inplace=True)
+            (3): Conv1d(192, 96, kernel_size=(1,), stride=(1,))
+            (4): BatchNorm1d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (5): ReLU(inplace=True)
+            (6): Conv1d(96, 3, kernel_size=(1,), stride=(1,))
+          )
+        )
+        (generate_feature): Sequential(
+          (0): Conv1d(224, 256, kernel_size=(1,), stride=(1,))
+          (1): LeakyReLU(negative_slope=0.2)
+          (2): Conv1d(256, 64, kernel_size=(1,), stride=(1,))
+          (3): LeakyReLU(negative_slope=0.2)
+          (4): Conv1d(64, 16, kernel_size=(1,), stride=(1,))
+        )
+      )
+      (7): EncoderBlock(
+        (norm1): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+        (self_attn): Attention(
+          (qkv): Linear(in_features=384, out_features=1152, bias=False)
+          (attn_drop): Dropout(p=0.0, inplace=False)
+          (proj): Linear(in_features=384, out_features=384, bias=True)
+          (proj_drop): Dropout(p=0.0, inplace=False)
+        )
+        (drop_path): Identity()
+        (norm2): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+        (norm_q): Identity()
+        (norm_k): Identity()
+        (attn): GeoCrossAttention(
+          (q_map): Identity()
+          (k_map): Identity()
+          (attn_drop): Dropout(p=0.0, inplace=False)
+          (x_map): Identity()
+        )
+        (mlp): Mlp(
+          (fc1): Linear(in_features=384, out_features=768, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=768, out_features=384, bias=True)
+          (drop): Dropout(p=0.0, inplace=False)
+        )
+        (generate_anchor): SubFold(
+          (folding1): Sequential(
+            (0): Conv1d(387, 192, kernel_size=(1,), stride=(1,))
+            (1): BatchNorm1d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (2): ReLU(inplace=True)
+            (3): Conv1d(192, 96, kernel_size=(1,), stride=(1,))
+            (4): BatchNorm1d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (5): ReLU(inplace=True)
+            (6): Conv1d(96, 3, kernel_size=(1,), stride=(1,))
+          )
+          (folding2): Sequential(
+            (0): Conv1d(387, 192, kernel_size=(1,), stride=(1,))
+            (1): BatchNorm1d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (2): ReLU(inplace=True)
+            (3): Conv1d(192, 96, kernel_size=(1,), stride=(1,))
+            (4): BatchNorm1d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (5): ReLU(inplace=True)
+            (6): Conv1d(96, 3, kernel_size=(1,), stride=(1,))
+          )
+        )
+        (generate_feature): Sequential(
+          (0): Conv1d(240, 256, kernel_size=(1,), stride=(1,))
+          (1): LeakyReLU(negative_slope=0.2)
+          (2): Conv1d(256, 64, kernel_size=(1,), stride=(1,))
+          (3): LeakyReLU(negative_slope=0.2)
+          (4): Conv1d(64, 16, kernel_size=(1,), stride=(1,))
+        )
+      )
+    )
+    (increase_dim): Sequential(
+      (0): Conv1d(384, 1024, kernel_size=(1,), stride=(1,))
+      (1): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): LeakyReLU(negative_slope=0.2)
+      (3): Conv1d(1024, 1024, kernel_size=(1,), stride=(1,))
+    )
+    (coarse_pred): Sequential(
+      (0): Linear(in_features=1024, out_features=1024, bias=True)
+      (1): ReLU(inplace=True)
+      (2): Linear(in_features=1024, out_features=384, bias=True)
+    )
+    (mlp_query): Sequential(
+      (0): Conv1d(1027, 1024, kernel_size=(1,), stride=(1,))
+      (1): LeakyReLU(negative_slope=0.2)
+      (2): Conv1d(1024, 1024, kernel_size=(1,), stride=(1,))
+      (3): LeakyReLU(negative_slope=0.2)
+      (4): Conv1d(1024, 384, kernel_size=(1,), stride=(1,))
+    )
+    (decoder): ModuleList(
+      (0-5): 6 x DecoderBlock(
+        (norm1): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+        (self_attn): Attention(
+          (qkv): Linear(in_features=384, out_features=1152, bias=False)
+          (attn_drop): Dropout(p=0.0, inplace=False)
+          (proj): Linear(in_features=384, out_features=384, bias=True)
+          (proj_drop): Dropout(p=0.0, inplace=False)
+        )
+        (norm_q): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+        (norm_v): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+        (attn): CrossAttention(
+          (q_map): Linear(in_features=384, out_features=384, bias=False)
+          (k_map): Linear(in_features=384, out_features=384, bias=False)
+          (v_map): Linear(in_features=384, out_features=384, bias=False)
+          (attn_drop): Dropout(p=0.0, inplace=False)
+          (proj): Linear(in_features=384, out_features=384, bias=True)
+          (proj_drop): Dropout(p=0.0, inplace=False)
+        )
+        (drop_path): Identity()
+        (norm2): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+        (mlp): Mlp(
+          (fc1): Linear(in_features=384, out_features=768, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=768, out_features=384, bias=True)
+          (drop): Dropout(p=0.0, inplace=False)
+        )
+      )
+    )
+  )
+  (upsample_net): PointMorphing(
+    (dec): GridDecoder(
+      (conv1): Conv1d(2, 256, kernel_size=(1,), stride=(1,))
+      (conv2): Conv1d(256, 128, kernel_size=(1,), stride=(1,))
+      (conv3): Conv1d(128, 64, kernel_size=(1,), stride=(1,))
+      (conv4): Conv1d(64, 3, kernel_size=(1,), stride=(1,))
+      (th): Tanh()
+      (adain1): AdaptiveInstanceNorm1d(256)
+      (adain2): AdaptiveInstanceNorm1d(128)
+      (adain3): AdaptiveInstanceNorm1d(64)
+      (bn1): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (bn2): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (bn3): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (mlp_global): Sequential(
+      (0): Linear(in_features=384, out_features=384, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=384, out_features=448, bias=True)
+    )
+    (mlp_local): Sequential(
+      (0): Linear(in_features=384, out_features=384, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=384, out_features=448, bias=True)
+    )
+  )
+  (increase_dim): Sequential(
+    (0): Conv1d(384, 1024, kernel_size=(1,), stride=(1,))
+    (1): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): LeakyReLU(negative_slope=0.2)
+    (3): Conv1d(1024, 1024, kernel_size=(1,), stride=(1,))
+  )
+  (reduce_map_global): Linear(in_features=1024, out_features=384, bias=True)
+  (reduce_map_local): Linear(in_features=387, out_features=384, bias=True)
+  (loss_func): ChamferDistanceL1()
+  (penalty_func): expansionPenaltyModule()
+)
+2026-05-17 16:55:09,772 - AnchorFormer - INFO - Loading weights from ./experiments/AnchorFormer/ours_models/realpc_full_anchorformer/ckpt-best.pth...
+2026-05-17 16:55:10,032 - AnchorFormer - INFO - ckpts @ 420 epoch( performance = {'F-Score': 0.5560439118648752, 'CDL1': 17.289693829176834, 'CDL2': 2.600522642501176})
+2026-05-17 16:55:16,100 - AnchorFormer - INFO - [TEST] Metrics = ['0.5542', '15.4700', '2.0504']
+2026-05-17 16:55:16,101 - AnchorFormer - INFO - ============================ TEST RESULTS ============================
+2026-05-17 16:55:16,101 - AnchorFormer - INFO - Taxonomy	#Sample	F-Score	CDL1	CDL2	#ModelName	
+2026-05-17 16:55:16,101 - AnchorFormer - INFO - chine_0	84	0.605 	10.087 	0.383 	chine_0	
+2026-05-17 16:55:16,101 - AnchorFormer - INFO - chine_1	12	0.450 	15.536 	1.158 	chine_1	
+2026-05-17 16:55:16,101 - AnchorFormer - INFO - chine_2	12	0.451 	15.553 	1.305 	chine_2	
+2026-05-17 16:55:16,101 - AnchorFormer - INFO - chine_3	3	0.551 	13.868 	1.288 	chine_3	
+2026-05-17 16:55:16,101 - AnchorFormer - INFO - dutch_0	15	0.414 	27.969 	6.171 	dutch_0	
+2026-05-17 16:55:16,101 - AnchorFormer - INFO - dutch_1	11	0.306 	37.757 	10.258 	dutch_1	
+2026-05-17 16:55:16,101 - AnchorFormer - INFO - dutch_2	2	0.505 	18.518 	3.204 	dutch_2	
+2026-05-17 16:55:16,101 - AnchorFormer - INFO - dutch_3	6	0.456 	31.090 	6.763 	dutch_3	
+2026-05-17 16:55:16,101 - AnchorFormer - INFO - dutch_4	2	0.319 	32.804 	6.976 	dutch_4	
+2026-05-17 16:55:16,101 - AnchorFormer - INFO - hung_0	1	0.727 	8.596 	0.529 	hung_0	
+2026-05-17 16:55:16,101 - AnchorFormer - INFO - hung_1	1	0.531 	18.275 	1.702 	hung_1	
+2026-05-17 16:55:16,101 - AnchorFormer - INFO - hung_2	5	0.735 	8.815 	0.652 	hung_2	
+2026-05-17 16:55:16,101 - AnchorFormer - INFO - hung_3	12	0.648 	13.434 	1.396 	hung_3	
+2026-05-17 16:55:16,101 - AnchorFormer - INFO - hung_4	4	0.712 	10.376 	0.777 	hung_4	
+2026-05-17 16:55:16,101 - AnchorFormer - INFO - hung_5	1	0.749 	8.100 	0.560 	hung_5	
+2026-05-17 16:55:16,101 - AnchorFormer - INFO - hung_6	2	0.638 	20.931 	4.858 	hung_6	
+2026-05-17 16:55:16,101 - AnchorFormer - INFO - hung_7	2	0.682 	10.631 	0.691 	hung_7	
+2026-05-17 16:55:16,102 - AnchorFormer - INFO - sncf_0	6	0.610 	10.225 	0.383 	sncf_0	
+2026-05-17 16:55:16,102 - AnchorFormer - INFO - sncf_1	2	0.610 	15.701 	2.603 	sncf_1	
+2026-05-17 16:55:16,102 - AnchorFormer - INFO - sncf_2	9	0.608 	11.129 	0.597 	sncf_2	
+2026-05-17 16:55:16,102 - AnchorFormer - INFO - sncf_3	1	0.370 	23.689 	2.358 	sncf_3	
+2026-05-17 16:55:16,102 - AnchorFormer - INFO - Overall 		0.554 	15.470 	2.050 	

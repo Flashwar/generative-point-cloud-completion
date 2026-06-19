@@ -1,0 +1,103 @@
+2026-05-17 17:15:44,720 - FoldingNet - INFO - Copy the Config file from ./cfgs/ours_models/FoldingNet.yaml to ./experiments/FoldingNet/ours_models/test_test_full_foldingnet/config.yaml
+2026-05-17 17:15:44,720 - FoldingNet - INFO - args.config : ./cfgs/ours_models/FoldingNet.yaml
+2026-05-17 17:15:44,721 - FoldingNet - INFO - args.launcher : none
+2026-05-17 17:15:44,721 - FoldingNet - INFO - args.local_rank : 0
+2026-05-17 17:15:44,721 - FoldingNet - INFO - args.num_workers : 4
+2026-05-17 17:15:44,721 - FoldingNet - INFO - args.seed : 0
+2026-05-17 17:15:44,721 - FoldingNet - INFO - args.deterministic : False
+2026-05-17 17:15:44,721 - FoldingNet - INFO - args.sync_bn : False
+2026-05-17 17:15:44,721 - FoldingNet - INFO - args.exp_name : test_test_full_foldingnet
+2026-05-17 17:15:44,721 - FoldingNet - INFO - args.start_ckpts : None
+2026-05-17 17:15:44,721 - FoldingNet - INFO - args.ckpts : ./experiments/FoldingNet/ours_models/realpc_full_foldingnet/ckpt-best.pth
+2026-05-17 17:15:44,721 - FoldingNet - INFO - args.val_freq : 1
+2026-05-17 17:15:44,721 - FoldingNet - INFO - args.resume : False
+2026-05-17 17:15:44,721 - FoldingNet - INFO - args.test : True
+2026-05-17 17:15:44,721 - FoldingNet - INFO - args.mode : None
+2026-05-17 17:15:44,721 - FoldingNet - INFO - args.experiment_path : ./experiments/FoldingNet/ours_models/test_test_full_foldingnet
+2026-05-17 17:15:44,721 - FoldingNet - INFO - args.tfboard_path : ./experiments/FoldingNet/ours_models/TFBoard/test_test_full_foldingnet
+2026-05-17 17:15:44,721 - FoldingNet - INFO - args.log_name : FoldingNet
+2026-05-17 17:15:44,721 - FoldingNet - INFO - args.use_gpu : True
+2026-05-17 17:15:44,721 - FoldingNet - INFO - args.distributed : False
+2026-05-17 17:15:44,721 - FoldingNet - INFO - config.optimizer = edict()
+2026-05-17 17:15:44,721 - FoldingNet - INFO - config.optimizer.type : Adam
+2026-05-17 17:15:44,721 - FoldingNet - INFO - config.optimizer.kwargs = edict()
+2026-05-17 17:15:44,722 - FoldingNet - INFO - config.optimizer.kwargs.lr : 0.0001
+2026-05-17 17:15:44,722 - FoldingNet - INFO - config.optimizer.kwargs.weight_decay : 0
+2026-05-17 17:15:44,722 - FoldingNet - INFO - config.scheduler = edict()
+2026-05-17 17:15:44,722 - FoldingNet - INFO - config.scheduler.type : StepLR
+2026-05-17 17:15:44,722 - FoldingNet - INFO - config.scheduler.kwargs = edict()
+2026-05-17 17:15:44,722 - FoldingNet - INFO - config.scheduler.kwargs.step_size : 50
+2026-05-17 17:15:44,722 - FoldingNet - INFO - config.scheduler.kwargs.gamma : 0.5
+2026-05-17 17:15:44,722 - FoldingNet - INFO - config.dataset = edict()
+2026-05-17 17:15:44,722 - FoldingNet - INFO - config.dataset.train = edict()
+2026-05-17 17:15:44,722 - FoldingNet - INFO - config.dataset.train._base_ = edict()
+2026-05-17 17:15:44,722 - FoldingNet - INFO - config.dataset.train._base_.NAME : Catenary
+2026-05-17 17:15:44,722 - FoldingNet - INFO - config.dataset.train._base_.CATEGORY_FILE_PATH : /base/realpc/difficult/ours.json
+2026-05-17 17:15:44,722 - FoldingNet - INFO - config.dataset.train._base_.N_POINTS : 5000
+2026-05-17 17:15:44,722 - FoldingNet - INFO - config.dataset.train._base_.N_RENDERINGS : 245
+2026-05-17 17:15:44,722 - FoldingNet - INFO - config.dataset.train._base_.PARTIAL_POINTS_PATH : /base/realpc/difficult/%s/partial/%s/%s/%03d.pcd
+2026-05-17 17:15:44,722 - FoldingNet - INFO - config.dataset.train._base_.COMPLETE_POINTS_PATH : /base/realpc/difficult/%s/complete/%s/%s.pcd
+2026-05-17 17:15:44,722 - FoldingNet - INFO - config.dataset.train._base_.CARS : False
+2026-05-17 17:15:44,722 - FoldingNet - INFO - config.dataset.train.others = edict()
+2026-05-17 17:15:44,722 - FoldingNet - INFO - config.dataset.train.others.subset : train
+2026-05-17 17:15:44,722 - FoldingNet - INFO - config.dataset.train.others.bs : 4
+2026-05-17 17:15:44,722 - FoldingNet - INFO - config.dataset.val = edict()
+2026-05-17 17:15:44,722 - FoldingNet - INFO - config.dataset.val._base_ = edict()
+2026-05-17 17:15:44,723 - FoldingNet - INFO - config.dataset.val._base_.NAME : Catenary
+2026-05-17 17:15:44,723 - FoldingNet - INFO - config.dataset.val._base_.CATEGORY_FILE_PATH : /base/realpc/difficult/ours.json
+2026-05-17 17:15:44,723 - FoldingNet - INFO - config.dataset.val._base_.N_POINTS : 5000
+2026-05-17 17:15:44,723 - FoldingNet - INFO - config.dataset.val._base_.N_RENDERINGS : 245
+2026-05-17 17:15:44,723 - FoldingNet - INFO - config.dataset.val._base_.PARTIAL_POINTS_PATH : /base/realpc/difficult/%s/partial/%s/%s/%03d.pcd
+2026-05-17 17:15:44,723 - FoldingNet - INFO - config.dataset.val._base_.COMPLETE_POINTS_PATH : /base/realpc/difficult/%s/complete/%s/%s.pcd
+2026-05-17 17:15:44,723 - FoldingNet - INFO - config.dataset.val._base_.CARS : False
+2026-05-17 17:15:44,723 - FoldingNet - INFO - config.dataset.val.others = edict()
+2026-05-17 17:15:44,723 - FoldingNet - INFO - config.dataset.val.others.subset : test
+2026-05-17 17:15:44,723 - FoldingNet - INFO - config.dataset.test = edict()
+2026-05-17 17:15:44,723 - FoldingNet - INFO - config.dataset.test._base_ = edict()
+2026-05-17 17:15:44,723 - FoldingNet - INFO - config.dataset.test._base_.NAME : Catenary
+2026-05-17 17:15:44,723 - FoldingNet - INFO - config.dataset.test._base_.CATEGORY_FILE_PATH : /base/realpc/difficult/ours.json
+2026-05-17 17:15:44,723 - FoldingNet - INFO - config.dataset.test._base_.N_POINTS : 5000
+2026-05-17 17:15:44,723 - FoldingNet - INFO - config.dataset.test._base_.N_RENDERINGS : 245
+2026-05-17 17:15:44,723 - FoldingNet - INFO - config.dataset.test._base_.PARTIAL_POINTS_PATH : /base/realpc/difficult/%s/partial/%s/%s/%03d.pcd
+2026-05-17 17:15:44,723 - FoldingNet - INFO - config.dataset.test._base_.COMPLETE_POINTS_PATH : /base/realpc/difficult/%s/complete/%s/%s.pcd
+2026-05-17 17:15:44,723 - FoldingNet - INFO - config.dataset.test._base_.CARS : False
+2026-05-17 17:15:44,723 - FoldingNet - INFO - config.dataset.test.others = edict()
+2026-05-17 17:15:44,723 - FoldingNet - INFO - config.dataset.test.others.subset : test
+2026-05-17 17:15:44,723 - FoldingNet - INFO - config.model = edict()
+2026-05-17 17:15:44,723 - FoldingNet - INFO - config.model.NAME : FoldingNet
+2026-05-17 17:15:44,724 - FoldingNet - INFO - config.model.num_pred : 5000
+2026-05-17 17:15:44,724 - FoldingNet - INFO - config.model.encoder_channel : 1024
+2026-05-17 17:15:44,724 - FoldingNet - INFO - config.total_bs : 4
+2026-05-17 17:15:44,724 - FoldingNet - INFO - config.step_per_update : 1
+2026-05-17 17:15:44,724 - FoldingNet - INFO - config.max_epoch : 150
+2026-05-17 17:15:44,724 - FoldingNet - INFO - config.consider_metric : CDL1
+2026-05-17 17:15:44,724 - FoldingNet - INFO - Distributed training: False
+2026-05-17 17:15:44,724 - FoldingNet - INFO - Set random seed to 0, deterministic: False
+2026-05-17 17:15:44,725 - FoldingNet - INFO - Tester start ... 
+2026-05-17 17:15:45,545 - FoldingNet - INFO - Loading weights from ./experiments/FoldingNet/ours_models/realpc_full_foldingnet/ckpt-best.pth...
+2026-05-17 17:15:45,571 - FoldingNet - INFO - ckpts @ 126 epoch( performance = {'F-Score': 0.07105626559919077, 'CDL1': 75.48540172583459, 'CDL2': 25.10247855090459, 'EMDistance': 0.0})
+2026-05-17 17:15:48,552 - FoldingNet - INFO - [TEST] Metrics = ['0.0707', '75.5007', '25.1066', '0.0000']
+2026-05-17 17:15:48,552 - FoldingNet - INFO - ============================ TEST RESULTS ============================
+2026-05-17 17:15:48,552 - FoldingNet - INFO - Taxonomy	#Sample	F-Score	CDL1	CDL2	EMDistance	#ModelName	
+2026-05-17 17:15:48,552 - FoldingNet - INFO - chine_0	84	0.098 	39.479 	6.780 	0.000 	chine_0	
+2026-05-17 17:15:48,553 - FoldingNet - INFO - chine_1	12	0.049 	44.092 	6.885 	0.000 	chine_1	
+2026-05-17 17:15:48,553 - FoldingNet - INFO - chine_2	12	0.042 	51.474 	9.667 	0.000 	chine_2	
+2026-05-17 17:15:48,553 - FoldingNet - INFO - chine_3	3	0.101 	41.677 	6.362 	0.000 	chine_3	
+2026-05-17 17:15:48,553 - FoldingNet - INFO - dutch_0	15	0.022 	121.045 	53.413 	0.000 	dutch_0	
+2026-05-17 17:15:48,553 - FoldingNet - INFO - dutch_1	11	0.039 	141.682 	87.857 	0.000 	dutch_1	
+2026-05-17 17:15:48,553 - FoldingNet - INFO - dutch_2	2	0.049 	99.314 	35.431 	0.000 	dutch_2	
+2026-05-17 17:15:48,553 - FoldingNet - INFO - dutch_3	6	0.029 	130.398 	65.748 	0.000 	dutch_3	
+2026-05-17 17:15:48,553 - FoldingNet - INFO - dutch_4	2	0.020 	136.648 	71.540 	0.000 	dutch_4	
+2026-05-17 17:15:48,554 - FoldingNet - INFO - hung_0	1	0.000 	126.643 	32.964 	0.000 	hung_0	
+2026-05-17 17:15:48,554 - FoldingNet - INFO - hung_1	1	0.117 	42.816 	7.180 	0.000 	hung_1	
+2026-05-17 17:15:48,554 - FoldingNet - INFO - hung_2	5	0.009 	94.148 	22.006 	0.000 	hung_2	
+2026-05-17 17:15:48,554 - FoldingNet - INFO - hung_3	12	0.035 	103.584 	32.972 	0.000 	hung_3	
+2026-05-17 17:15:48,554 - FoldingNet - INFO - hung_4	4	0.012 	78.252 	16.644 	0.000 	hung_4	
+2026-05-17 17:15:48,554 - FoldingNet - INFO - hung_5	1	0.193 	29.684 	3.634 	0.000 	hung_5	
+2026-05-17 17:15:48,554 - FoldingNet - INFO - hung_6	2	0.112 	65.624 	15.406 	0.000 	hung_6	
+2026-05-17 17:15:48,554 - FoldingNet - INFO - hung_7	2	0.008 	73.918 	20.074 	0.000 	hung_7	
+2026-05-17 17:15:48,555 - FoldingNet - INFO - sncf_0	6	0.251 	28.506 	4.248 	0.000 	sncf_0	
+2026-05-17 17:15:48,555 - FoldingNet - INFO - sncf_1	2	0.193 	42.230 	10.683 	0.000 	sncf_1	
+2026-05-17 17:15:48,555 - FoldingNet - INFO - sncf_2	9	0.090 	28.369 	2.875 	0.000 	sncf_2	
+2026-05-17 17:15:48,555 - FoldingNet - INFO - sncf_3	1	0.015 	65.934 	14.870 	0.000 	sncf_3	
+2026-05-17 17:15:48,555 - FoldingNet - INFO - Overall 		0.071 	75.501 	25.107 	0.000 	

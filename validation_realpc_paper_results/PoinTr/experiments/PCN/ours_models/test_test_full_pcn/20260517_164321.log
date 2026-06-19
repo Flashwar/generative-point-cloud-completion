@@ -1,0 +1,103 @@
+2026-05-17 16:43:21,524 - PCN - INFO - Copy the Config file from ./cfgs/ours_models/PCN.yaml to ./experiments/PCN/ours_models/test_test_full_pcn/config.yaml
+2026-05-17 16:43:21,524 - PCN - INFO - args.config : ./cfgs/ours_models/PCN.yaml
+2026-05-17 16:43:21,524 - PCN - INFO - args.launcher : none
+2026-05-17 16:43:21,524 - PCN - INFO - args.local_rank : 0
+2026-05-17 16:43:21,524 - PCN - INFO - args.num_workers : 4
+2026-05-17 16:43:21,524 - PCN - INFO - args.seed : 0
+2026-05-17 16:43:21,524 - PCN - INFO - args.deterministic : False
+2026-05-17 16:43:21,524 - PCN - INFO - args.sync_bn : False
+2026-05-17 16:43:21,524 - PCN - INFO - args.exp_name : test_test_full_pcn
+2026-05-17 16:43:21,524 - PCN - INFO - args.start_ckpts : None
+2026-05-17 16:43:21,525 - PCN - INFO - args.ckpts : ./experiments/PCN/ours_models/realpc_full_pcn/ckpt-best.pth
+2026-05-17 16:43:21,525 - PCN - INFO - args.val_freq : 1
+2026-05-17 16:43:21,525 - PCN - INFO - args.resume : False
+2026-05-17 16:43:21,525 - PCN - INFO - args.test : True
+2026-05-17 16:43:21,525 - PCN - INFO - args.mode : None
+2026-05-17 16:43:21,525 - PCN - INFO - args.experiment_path : ./experiments/PCN/ours_models/test_test_full_pcn
+2026-05-17 16:43:21,525 - PCN - INFO - args.tfboard_path : ./experiments/PCN/ours_models/TFBoard/test_test_full_pcn
+2026-05-17 16:43:21,525 - PCN - INFO - args.log_name : PCN
+2026-05-17 16:43:21,525 - PCN - INFO - args.use_gpu : True
+2026-05-17 16:43:21,525 - PCN - INFO - args.distributed : False
+2026-05-17 16:43:21,525 - PCN - INFO - config.optimizer = edict()
+2026-05-17 16:43:21,525 - PCN - INFO - config.optimizer.type : Adam
+2026-05-17 16:43:21,525 - PCN - INFO - config.optimizer.kwargs = edict()
+2026-05-17 16:43:21,525 - PCN - INFO - config.optimizer.kwargs.lr : 0.0001
+2026-05-17 16:43:21,525 - PCN - INFO - config.optimizer.kwargs.weight_decay : 0
+2026-05-17 16:43:21,525 - PCN - INFO - config.scheduler = edict()
+2026-05-17 16:43:21,525 - PCN - INFO - config.scheduler.type : StepLR
+2026-05-17 16:43:21,525 - PCN - INFO - config.scheduler.kwargs = edict()
+2026-05-17 16:43:21,525 - PCN - INFO - config.scheduler.kwargs.step_size : 50
+2026-05-17 16:43:21,525 - PCN - INFO - config.scheduler.kwargs.gamma : 0.5
+2026-05-17 16:43:21,525 - PCN - INFO - config.dataset = edict()
+2026-05-17 16:43:21,525 - PCN - INFO - config.dataset.train = edict()
+2026-05-17 16:43:21,525 - PCN - INFO - config.dataset.train._base_ = edict()
+2026-05-17 16:43:21,526 - PCN - INFO - config.dataset.train._base_.NAME : Catenary
+2026-05-17 16:43:21,526 - PCN - INFO - config.dataset.train._base_.CATEGORY_FILE_PATH : /base/realpc/difficult/ours.json
+2026-05-17 16:43:21,526 - PCN - INFO - config.dataset.train._base_.N_POINTS : 5000
+2026-05-17 16:43:21,526 - PCN - INFO - config.dataset.train._base_.N_RENDERINGS : 245
+2026-05-17 16:43:21,526 - PCN - INFO - config.dataset.train._base_.PARTIAL_POINTS_PATH : /base/realpc/difficult/%s/partial/%s/%s/%03d.pcd
+2026-05-17 16:43:21,526 - PCN - INFO - config.dataset.train._base_.COMPLETE_POINTS_PATH : /base/realpc/difficult/%s/complete/%s/%s.pcd
+2026-05-17 16:43:21,526 - PCN - INFO - config.dataset.train._base_.CARS : False
+2026-05-17 16:43:21,526 - PCN - INFO - config.dataset.train.others = edict()
+2026-05-17 16:43:21,526 - PCN - INFO - config.dataset.train.others.subset : train
+2026-05-17 16:43:21,526 - PCN - INFO - config.dataset.train.others.bs : 4
+2026-05-17 16:43:21,526 - PCN - INFO - config.dataset.val = edict()
+2026-05-17 16:43:21,526 - PCN - INFO - config.dataset.val._base_ = edict()
+2026-05-17 16:43:21,526 - PCN - INFO - config.dataset.val._base_.NAME : Catenary
+2026-05-17 16:43:21,526 - PCN - INFO - config.dataset.val._base_.CATEGORY_FILE_PATH : /base/realpc/difficult/ours.json
+2026-05-17 16:43:21,526 - PCN - INFO - config.dataset.val._base_.N_POINTS : 5000
+2026-05-17 16:43:21,526 - PCN - INFO - config.dataset.val._base_.N_RENDERINGS : 245
+2026-05-17 16:43:21,526 - PCN - INFO - config.dataset.val._base_.PARTIAL_POINTS_PATH : /base/realpc/difficult/%s/partial/%s/%s/%03d.pcd
+2026-05-17 16:43:21,526 - PCN - INFO - config.dataset.val._base_.COMPLETE_POINTS_PATH : /base/realpc/difficult/%s/complete/%s/%s.pcd
+2026-05-17 16:43:21,526 - PCN - INFO - config.dataset.val._base_.CARS : False
+2026-05-17 16:43:21,526 - PCN - INFO - config.dataset.val.others = edict()
+2026-05-17 16:43:21,526 - PCN - INFO - config.dataset.val.others.subset : test
+2026-05-17 16:43:21,526 - PCN - INFO - config.dataset.test = edict()
+2026-05-17 16:43:21,526 - PCN - INFO - config.dataset.test._base_ = edict()
+2026-05-17 16:43:21,527 - PCN - INFO - config.dataset.test._base_.NAME : Catenary
+2026-05-17 16:43:21,527 - PCN - INFO - config.dataset.test._base_.CATEGORY_FILE_PATH : /base/realpc/difficult/ours.json
+2026-05-17 16:43:21,527 - PCN - INFO - config.dataset.test._base_.N_POINTS : 5000
+2026-05-17 16:43:21,527 - PCN - INFO - config.dataset.test._base_.N_RENDERINGS : 245
+2026-05-17 16:43:21,527 - PCN - INFO - config.dataset.test._base_.PARTIAL_POINTS_PATH : /base/realpc/difficult/%s/partial/%s/%s/%03d.pcd
+2026-05-17 16:43:21,527 - PCN - INFO - config.dataset.test._base_.COMPLETE_POINTS_PATH : /base/realpc/difficult/%s/complete/%s/%s.pcd
+2026-05-17 16:43:21,527 - PCN - INFO - config.dataset.test._base_.CARS : False
+2026-05-17 16:43:21,527 - PCN - INFO - config.dataset.test.others = edict()
+2026-05-17 16:43:21,527 - PCN - INFO - config.dataset.test.others.subset : test
+2026-05-17 16:43:21,527 - PCN - INFO - config.model = edict()
+2026-05-17 16:43:21,527 - PCN - INFO - config.model.NAME : PCN
+2026-05-17 16:43:21,527 - PCN - INFO - config.model.num_pred : 6000
+2026-05-17 16:43:21,527 - PCN - INFO - config.model.encoder_channel : 1024
+2026-05-17 16:43:21,527 - PCN - INFO - config.total_bs : 4
+2026-05-17 16:43:21,527 - PCN - INFO - config.step_per_update : 1
+2026-05-17 16:43:21,527 - PCN - INFO - config.max_epoch : 150
+2026-05-17 16:43:21,527 - PCN - INFO - config.consider_metric : CDL1
+2026-05-17 16:43:21,527 - PCN - INFO - Distributed training: False
+2026-05-17 16:43:21,527 - PCN - INFO - Set random seed to 0, deterministic: False
+2026-05-17 16:43:21,528 - PCN - INFO - Tester start ... 
+2026-05-17 16:43:22,443 - PCN - INFO - Loading weights from ./experiments/PCN/ours_models/realpc_full_pcn/ckpt-best.pth...
+2026-05-17 16:43:22,490 - PCN - INFO - ckpts @ 126 epoch( performance = {'F-Score': 0.10564969093459986, 'CDL1': 48.144130169946386, 'CDL2': 9.746967203500223, 'EMDistance': 0.0})
+2026-05-17 16:43:25,606 - PCN - INFO - [TEST] Metrics = ['0.1056', '48.1441', '9.7470', '0.0000']
+2026-05-17 16:43:25,607 - PCN - INFO - ============================ TEST RESULTS ============================
+2026-05-17 16:43:25,607 - PCN - INFO - Taxonomy	#Sample	F-Score	CDL1	CDL2	EMDistance	#ModelName	
+2026-05-17 16:43:25,607 - PCN - INFO - chine_0	84	0.269 	20.514 	1.404 	0.000 	chine_0	
+2026-05-17 16:43:25,607 - PCN - INFO - chine_1	12	0.137 	28.828 	3.094 	0.000 	chine_1	
+2026-05-17 16:43:25,607 - PCN - INFO - chine_2	12	0.119 	36.289 	4.841 	0.000 	chine_2	
+2026-05-17 16:43:25,607 - PCN - INFO - chine_3	3	0.172 	30.657 	4.198 	0.000 	chine_3	
+2026-05-17 16:43:25,607 - PCN - INFO - dutch_0	15	0.069 	75.013 	21.439 	0.000 	dutch_0	
+2026-05-17 16:43:25,607 - PCN - INFO - dutch_1	11	0.027 	87.805 	28.110 	0.000 	dutch_1	
+2026-05-17 16:43:25,608 - PCN - INFO - dutch_2	2	0.075 	51.458 	11.017 	0.000 	dutch_2	
+2026-05-17 16:43:25,608 - PCN - INFO - dutch_3	6	0.035 	80.167 	25.106 	0.000 	dutch_3	
+2026-05-17 16:43:25,608 - PCN - INFO - dutch_4	2	0.039 	60.859 	13.161 	0.000 	dutch_4	
+2026-05-17 16:43:25,608 - PCN - INFO - hung_0	1	0.000 	75.244 	15.453 	0.000 	hung_0	
+2026-05-17 16:43:25,608 - PCN - INFO - hung_1	1	0.011 	71.569 	15.537 	0.000 	hung_1	
+2026-05-17 16:43:25,608 - PCN - INFO - hung_2	5	0.128 	32.636 	4.343 	0.000 	hung_2	
+2026-05-17 16:43:25,608 - PCN - INFO - hung_3	12	0.065 	38.757 	5.406 	0.000 	hung_3	
+2026-05-17 16:43:25,608 - PCN - INFO - hung_4	4	0.029 	48.793 	7.384 	0.000 	hung_4	
+2026-05-17 16:43:25,609 - PCN - INFO - hung_5	1	0.016 	45.512 	6.957 	0.000 	hung_5	
+2026-05-17 16:43:25,609 - PCN - INFO - hung_6	2	0.199 	39.847 	7.626 	0.000 	hung_6	
+2026-05-17 16:43:25,609 - PCN - INFO - hung_7	2	0.048 	67.874 	15.809 	0.000 	hung_7	
+2026-05-17 16:43:25,609 - PCN - INFO - sncf_0	6	0.318 	18.019 	1.045 	0.000 	sncf_0	
+2026-05-17 16:43:25,609 - PCN - INFO - sncf_1	2	0.198 	33.903 	5.351 	0.000 	sncf_1	
+2026-05-17 16:43:25,609 - PCN - INFO - sncf_2	9	0.210 	26.043 	2.830 	0.000 	sncf_2	
+2026-05-17 16:43:25,609 - PCN - INFO - sncf_3	1	0.054 	41.241 	4.577 	0.000 	sncf_3	
+2026-05-17 16:43:25,609 - PCN - INFO - Overall 		0.106 	48.144 	9.747 	0.000 	

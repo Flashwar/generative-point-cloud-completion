@@ -1,0 +1,109 @@
+2026-05-17 16:50:43,056 - SnowFlakeNet - INFO - Copy the Config file from ./cfgs/ours_models/SnowFlakeNet.yaml to ./experiments/SnowFlakeNet/ours_models/test_test_full_snowflake/config.yaml
+2026-05-17 16:50:43,056 - SnowFlakeNet - INFO - args.config : ./cfgs/ours_models/SnowFlakeNet.yaml
+2026-05-17 16:50:43,056 - SnowFlakeNet - INFO - args.launcher : none
+2026-05-17 16:50:43,056 - SnowFlakeNet - INFO - args.local_rank : 0
+2026-05-17 16:50:43,056 - SnowFlakeNet - INFO - args.num_workers : 4
+2026-05-17 16:50:43,056 - SnowFlakeNet - INFO - args.seed : 0
+2026-05-17 16:50:43,056 - SnowFlakeNet - INFO - args.deterministic : False
+2026-05-17 16:50:43,056 - SnowFlakeNet - INFO - args.sync_bn : False
+2026-05-17 16:50:43,056 - SnowFlakeNet - INFO - args.exp_name : test_test_full_snowflake
+2026-05-17 16:50:43,056 - SnowFlakeNet - INFO - args.start_ckpts : None
+2026-05-17 16:50:43,056 - SnowFlakeNet - INFO - args.ckpts : ./experiments/SnowFlakeNet/ours_models/realpc_full_snowflake/ckpt-best.pth
+2026-05-17 16:50:43,056 - SnowFlakeNet - INFO - args.val_freq : 1
+2026-05-17 16:50:43,056 - SnowFlakeNet - INFO - args.resume : False
+2026-05-17 16:50:43,056 - SnowFlakeNet - INFO - args.test : True
+2026-05-17 16:50:43,056 - SnowFlakeNet - INFO - args.mode : None
+2026-05-17 16:50:43,056 - SnowFlakeNet - INFO - args.experiment_path : ./experiments/SnowFlakeNet/ours_models/test_test_full_snowflake
+2026-05-17 16:50:43,057 - SnowFlakeNet - INFO - args.tfboard_path : ./experiments/SnowFlakeNet/ours_models/TFBoard/test_test_full_snowflake
+2026-05-17 16:50:43,057 - SnowFlakeNet - INFO - args.log_name : SnowFlakeNet
+2026-05-17 16:50:43,057 - SnowFlakeNet - INFO - args.use_gpu : True
+2026-05-17 16:50:43,057 - SnowFlakeNet - INFO - args.distributed : False
+2026-05-17 16:50:43,057 - SnowFlakeNet - INFO - config.optimizer = edict()
+2026-05-17 16:50:43,057 - SnowFlakeNet - INFO - config.optimizer.type : Adam
+2026-05-17 16:50:43,057 - SnowFlakeNet - INFO - config.optimizer.kwargs = edict()
+2026-05-17 16:50:43,057 - SnowFlakeNet - INFO - config.optimizer.kwargs.lr : 0.001
+2026-05-17 16:50:43,057 - SnowFlakeNet - INFO - config.optimizer.kwargs.weight_decay : 0
+2026-05-17 16:50:43,057 - SnowFlakeNet - INFO - config.scheduler = edict()
+2026-05-17 16:50:43,057 - SnowFlakeNet - INFO - config.scheduler.type : GradualWarmup
+2026-05-17 16:50:43,057 - SnowFlakeNet - INFO - config.scheduler.kwargs_1 = edict()
+2026-05-17 16:50:43,057 - SnowFlakeNet - INFO - config.scheduler.kwargs_1.step_size : 50
+2026-05-17 16:50:43,057 - SnowFlakeNet - INFO - config.scheduler.kwargs_1.gamma : 0.5
+2026-05-17 16:50:43,057 - SnowFlakeNet - INFO - config.scheduler.kwargs_2 = edict()
+2026-05-17 16:50:43,057 - SnowFlakeNet - INFO - config.scheduler.kwargs_2.multiplier : 1
+2026-05-17 16:50:43,057 - SnowFlakeNet - INFO - config.scheduler.kwargs_2.total_epoch : 200
+2026-05-17 16:50:43,057 - SnowFlakeNet - INFO - config.dataset = edict()
+2026-05-17 16:50:43,057 - SnowFlakeNet - INFO - config.dataset.train = edict()
+2026-05-17 16:50:43,057 - SnowFlakeNet - INFO - config.dataset.train._base_ = edict()
+2026-05-17 16:50:43,057 - SnowFlakeNet - INFO - config.dataset.train._base_.NAME : Catenary
+2026-05-17 16:50:43,058 - SnowFlakeNet - INFO - config.dataset.train._base_.CATEGORY_FILE_PATH :/base/realpc/difficult/ours.json
+2026-05-17 16:50:43,058 - SnowFlakeNet - INFO - config.dataset.train._base_.N_POINTS : 5000
+2026-05-17 16:50:43,058 - SnowFlakeNet - INFO - config.dataset.train._base_.N_RENDERINGS : 245
+2026-05-17 16:50:43,058 - SnowFlakeNet - INFO - config.dataset.train._base_.PARTIAL_POINTS_PATH : /base/realpc/difficult/%s/partial/%s/%s/%03d.pcd
+2026-05-17 16:50:43,058 - SnowFlakeNet - INFO - config.dataset.train._base_.COMPLETE_POINTS_PATH : /base/realpc/difficult/%s/complete/%s/%s.pcd
+2026-05-17 16:50:43,058 - SnowFlakeNet - INFO - config.dataset.train._base_.CARS : False
+2026-05-17 16:50:43,058 - SnowFlakeNet - INFO - config.dataset.train.others = edict()
+2026-05-17 16:50:43,058 - SnowFlakeNet - INFO - config.dataset.train.others.subset : train
+2026-05-17 16:50:43,058 - SnowFlakeNet - INFO - config.dataset.train.others.bs : 4
+2026-05-17 16:50:43,058 - SnowFlakeNet - INFO - config.dataset.val = edict()
+2026-05-17 16:50:43,058 - SnowFlakeNet - INFO - config.dataset.val._base_ = edict()
+2026-05-17 16:50:43,058 - SnowFlakeNet - INFO - config.dataset.val._base_.NAME : Catenary
+2026-05-17 16:50:43,058 - SnowFlakeNet - INFO - config.dataset.val._base_.CATEGORY_FILE_PATH : /base/realpc/difficult/ours.json
+2026-05-17 16:50:43,058 - SnowFlakeNet - INFO - config.dataset.val._base_.N_POINTS : 5000
+2026-05-17 16:50:43,058 - SnowFlakeNet - INFO - config.dataset.val._base_.N_RENDERINGS : 245
+2026-05-17 16:50:43,058 - SnowFlakeNet - INFO - config.dataset.val._base_.PARTIAL_POINTS_PATH : /base/realpc/difficult/%s/partial/%s/%s/%03d.pcd
+2026-05-17 16:50:43,058 - SnowFlakeNet - INFO - config.dataset.val._base_.COMPLETE_POINTS_PATH : /base/realpc/difficult/%s/complete/%s/%s.pcd
+2026-05-17 16:50:43,058 - SnowFlakeNet - INFO - config.dataset.val._base_.CARS : False
+2026-05-17 16:50:43,058 - SnowFlakeNet - INFO - config.dataset.val.others = edict()
+2026-05-17 16:50:43,058 - SnowFlakeNet - INFO - config.dataset.val.others.subset : test
+2026-05-17 16:50:43,058 - SnowFlakeNet - INFO - config.dataset.test = edict()
+2026-05-17 16:50:43,059 - SnowFlakeNet - INFO - config.dataset.test._base_ = edict()
+2026-05-17 16:50:43,059 - SnowFlakeNet - INFO - config.dataset.test._base_.NAME : Catenary
+2026-05-17 16:50:43,059 - SnowFlakeNet - INFO - config.dataset.test._base_.CATEGORY_FILE_PATH : /base/realpc/difficult/ours.json
+2026-05-17 16:50:43,059 - SnowFlakeNet - INFO - config.dataset.test._base_.N_POINTS : 5000
+2026-05-17 16:50:43,059 - SnowFlakeNet - INFO - config.dataset.test._base_.N_RENDERINGS : 245
+2026-05-17 16:50:43,059 - SnowFlakeNet - INFO - config.dataset.test._base_.PARTIAL_POINTS_PATH : /base/realpc/difficult/%s/partial/%s/%s/%03d.pcd
+2026-05-17 16:50:43,059 - SnowFlakeNet - INFO - config.dataset.test._base_.COMPLETE_POINTS_PATH : /base/realpc/difficult/%s/complete/%s/%s.pcd
+2026-05-17 16:50:43,059 - SnowFlakeNet - INFO - config.dataset.test._base_.CARS : False
+2026-05-17 16:50:43,059 - SnowFlakeNet - INFO - config.dataset.test.others = edict()
+2026-05-17 16:50:43,059 - SnowFlakeNet - INFO - config.dataset.test.others.subset : test
+2026-05-17 16:50:43,059 - SnowFlakeNet - INFO - config.model = edict()
+2026-05-17 16:50:43,059 - SnowFlakeNet - INFO - config.model.NAME : SnowFlakeNet
+2026-05-17 16:50:43,059 - SnowFlakeNet - INFO - config.model.dim_feat : 512
+2026-05-17 16:50:43,059 - SnowFlakeNet - INFO - config.model.num_pc : 256
+2026-05-17 16:50:43,059 - SnowFlakeNet - INFO - config.model.num_p0 : 512
+2026-05-17 16:50:43,059 - SnowFlakeNet - INFO - config.model.radius : 1
+2026-05-17 16:50:43,059 - SnowFlakeNet - INFO - config.model.up_factors : [4, 8]
+2026-05-17 16:50:43,059 - SnowFlakeNet - INFO - config.total_bs : 4
+2026-05-17 16:50:43,059 - SnowFlakeNet - INFO - config.step_per_update : 1
+2026-05-17 16:50:43,059 - SnowFlakeNet - INFO - config.max_epoch : 300
+2026-05-17 16:50:43,059 - SnowFlakeNet - INFO - config.consider_metric : CDL1
+2026-05-17 16:50:43,059 - SnowFlakeNet - INFO - Distributed training: False
+2026-05-17 16:50:43,060 - SnowFlakeNet - INFO - Set random seed to 0, deterministic: False
+2026-05-17 16:50:43,061 - SnowFlakeNet - INFO - Tester start ... 
+2026-05-17 16:50:43,156 - SnowFlakeNet - INFO - Loading weights from ./experiments/SnowFlakeNet/ours_models/realpc_full_snowflake/ckpt-best.pth...
+2026-05-17 16:50:43,336 - SnowFlakeNet - INFO - ckpts @ 297 epoch( performance = {'F-Score': 0.8135130621043872, 'CDL1': 7.632977785217484, 'CDL2': 0.9237144056776736, 'EMDistance': 0.0})
+2026-05-17 16:50:52,131 - SnowFlakeNet - INFO - [TEST] Metrics = ['0.8134', '7.6369', '0.9246', '0.0000']
+2026-05-17 16:50:52,131 - SnowFlakeNet - INFO - ============================ TEST RESULTS ============================
+2026-05-17 16:50:52,132 - SnowFlakeNet - INFO - Taxonomy	#Sample	F-Score	CDL1	CDL2	EMDistance	#ModelName	
+2026-05-17 16:50:52,132 - SnowFlakeNet - INFO - chine_0	84	0.855 	5.709 	0.149 	0.000 	chine_0	
+2026-05-17 16:50:52,132 - SnowFlakeNet - INFO - chine_1	12	0.710 	8.459 	0.387 	0.000 	chine_1	
+2026-05-17 16:50:52,132 - SnowFlakeNet - INFO - chine_2	12	0.699 	9.922 	0.554 	0.000 	chine_2	
+2026-05-17 16:50:52,132 - SnowFlakeNet - INFO - chine_3	3	0.737 	8.866 	0.505 	0.000 	chine_3	
+2026-05-17 16:50:52,132 - SnowFlakeNet - INFO - dutch_0	15	0.772 	10.607 	1.726 	0.000 	dutch_0	
+2026-05-17 16:50:52,132 - SnowFlakeNet - INFO - dutch_1	11	0.652 	16.051 	3.182 	0.000 	dutch_1	
+2026-05-17 16:50:52,132 - SnowFlakeNet - INFO - dutch_2	2	0.885 	6.967 	1.475 	0.000 	dutch_2	
+2026-05-17 16:50:52,133 - SnowFlakeNet - INFO - dutch_3	6	0.769 	11.735 	2.408 	0.000 	dutch_3	
+2026-05-17 16:50:52,133 - SnowFlakeNet - INFO - dutch_4	2	0.748 	10.075 	0.929 	0.000 	dutch_4	
+2026-05-17 16:50:52,133 - SnowFlakeNet - INFO - hung_0	1	0.968 	2.366 	0.463 	0.000 	hung_0	
+2026-05-17 16:50:52,133 - SnowFlakeNet - INFO - hung_1	1	0.769 	8.248 	0.984 	0.000 	hung_1	
+2026-05-17 16:50:52,133 - SnowFlakeNet - INFO - hung_2	5	0.971 	2.786 	0.672 	0.000 	hung_2	
+2026-05-17 16:50:52,133 - SnowFlakeNet - INFO - hung_3	12	0.947 	3.373 	0.707 	0.000 	hung_3	
+2026-05-17 16:50:52,133 - SnowFlakeNet - INFO - hung_4	4	0.941 	3.639 	0.693 	0.000 	hung_4	
+2026-05-17 16:50:52,133 - SnowFlakeNet - INFO - hung_5	1	0.950 	2.654 	0.405 	0.000 	hung_5	
+2026-05-17 16:50:52,134 - SnowFlakeNet - INFO - hung_6	2	0.823 	7.153 	0.940 	0.000 	hung_6	
+2026-05-17 16:50:52,134 - SnowFlakeNet - INFO - hung_7	2	0.866 	5.690 	1.110 	0.000 	hung_7	
+2026-05-17 16:50:52,134 - SnowFlakeNet - INFO - sncf_0	6	0.819 	6.500 	0.178 	0.000 	sncf_0	
+2026-05-17 16:50:52,134 - SnowFlakeNet - INFO - sncf_1	2	0.831 	8.066 	0.654 	0.000 	sncf_1	
+2026-05-17 16:50:52,134 - SnowFlakeNet - INFO - sncf_2	9	0.837 	6.217 	0.266 	0.000 	sncf_2	
+2026-05-17 16:50:52,134 - SnowFlakeNet - INFO - sncf_3	1	0.533 	15.293 	1.030 	0.000 	sncf_3	
+2026-05-17 16:50:52,134 - SnowFlakeNet - INFO - Overall 		0.813 	7.637 	0.925 	0.000 	

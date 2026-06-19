@@ -1,0 +1,246 @@
+2026-05-17 16:55:46,365 - DictFold - INFO - Copy the Config file from ./cfgs/ours_models/DictFold.yaml to ./experiments/DictFold/ours_models/test_test_full_odgnet/config.yaml
+2026-05-17 16:55:46,365 - DictFold - INFO - args.config : ./cfgs/ours_models/DictFold.yaml
+2026-05-17 16:55:46,365 - DictFold - INFO - args.launcher : none
+2026-05-17 16:55:46,365 - DictFold - INFO - args.local_rank : 0
+2026-05-17 16:55:46,365 - DictFold - INFO - args.num_workers : 2
+2026-05-17 16:55:46,365 - DictFold - INFO - args.seed : 2023
+2026-05-17 16:55:46,366 - DictFold - INFO - args.deterministic : False
+2026-05-17 16:55:46,366 - DictFold - INFO - args.sync_bn : False
+2026-05-17 16:55:46,366 - DictFold - INFO - args.exp_name : test_test_full_odgnet
+2026-05-17 16:55:46,366 - DictFold - INFO - args.start_ckpts : None
+2026-05-17 16:55:46,366 - DictFold - INFO - args.ckpts : ./experiments/DictFold/ours_models/realpc_full_odgnet/ckpt-best.pth
+2026-05-17 16:55:46,366 - DictFold - INFO - args.val_freq : 10
+2026-05-17 16:55:46,366 - DictFold - INFO - args.val_interval : 50
+2026-05-17 16:55:46,366 - DictFold - INFO - args.test_interval : 50
+2026-05-17 16:55:46,366 - DictFold - INFO - args.resume : False
+2026-05-17 16:55:46,366 - DictFold - INFO - args.test : True
+2026-05-17 16:55:46,366 - DictFold - INFO - args.mode : None
+2026-05-17 16:55:46,366 - DictFold - INFO - args.experiment_path : ./experiments/DictFold/ours_models/test_test_full_odgnet
+2026-05-17 16:55:46,366 - DictFold - INFO - args.tfboard_path : ./experiments/DictFold/ours_models/TFBoard/test_test_full_odgnet
+2026-05-17 16:55:46,366 - DictFold - INFO - args.log_name : DictFold
+2026-05-17 16:55:46,366 - DictFold - INFO - args.use_gpu : True
+2026-05-17 16:55:46,366 - DictFold - INFO - args.distributed : False
+2026-05-17 16:55:46,366 - DictFold - INFO - config.optimizer = edict()
+2026-05-17 16:55:46,366 - DictFold - INFO - config.optimizer.type : AdamW
+2026-05-17 16:55:46,366 - DictFold - INFO - config.optimizer.kwargs = edict()
+2026-05-17 16:55:46,366 - DictFold - INFO - config.optimizer.kwargs.lr : 0.0008
+2026-05-17 16:55:46,366 - DictFold - INFO - config.optimizer.kwargs.weight_decay : 0.0005
+2026-05-17 16:55:46,367 - DictFold - INFO - config.scheduler = edict()
+2026-05-17 16:55:46,367 - DictFold - INFO - config.scheduler.type : LambdaLR
+2026-05-17 16:55:46,367 - DictFold - INFO - config.scheduler.kwargs = edict()
+2026-05-17 16:55:46,367 - DictFold - INFO - config.scheduler.kwargs.decay_step : 21
+2026-05-17 16:55:46,367 - DictFold - INFO - config.scheduler.kwargs.lr_decay : 0.9
+2026-05-17 16:55:46,367 - DictFold - INFO - config.scheduler.kwargs.lowest_decay : 0.02
+2026-05-17 16:55:46,367 - DictFold - INFO - config.bnmscheduler = edict()
+2026-05-17 16:55:46,367 - DictFold - INFO - config.bnmscheduler.type : Lambda
+2026-05-17 16:55:46,367 - DictFold - INFO - config.bnmscheduler.kwargs = edict()
+2026-05-17 16:55:46,367 - DictFold - INFO - config.bnmscheduler.kwargs.decay_step : 21
+2026-05-17 16:55:46,367 - DictFold - INFO - config.bnmscheduler.kwargs.bn_decay : 0.5
+2026-05-17 16:55:46,367 - DictFold - INFO - config.bnmscheduler.kwargs.bn_momentum : 0.9
+2026-05-17 16:55:46,367 - DictFold - INFO - config.bnmscheduler.kwargs.lowest_decay : 0.01
+2026-05-17 16:55:46,367 - DictFold - INFO - config.dataset = edict()
+2026-05-17 16:55:46,367 - DictFold - INFO - config.dataset.train = edict()
+2026-05-17 16:55:46,367 - DictFold - INFO - config.dataset.train._base_ = edict()
+2026-05-17 16:55:46,367 - DictFold - INFO - config.dataset.train._base_.NAME : Catenary
+2026-05-17 16:55:46,367 - DictFold - INFO - config.dataset.train._base_.CATEGORY_FILE_PATH : /base/realpc/difficult/ours.json
+2026-05-17 16:55:46,367 - DictFold - INFO - config.dataset.train._base_.N_POINTS : 5000
+2026-05-17 16:55:46,367 - DictFold - INFO - config.dataset.train._base_.N_RENDERINGS : 245
+2026-05-17 16:55:46,367 - DictFold - INFO - config.dataset.train._base_.PARTIAL_POINTS_PATH : /base/realpc/difficult/%s/partial/%s/%s/%03d.pcd
+2026-05-17 16:55:46,368 - DictFold - INFO - config.dataset.train._base_.COMPLETE_POINTS_PATH :/base/realpc/difficult/%s/complete/%s/%s.pcd
+2026-05-17 16:55:46,368 - DictFold - INFO - config.dataset.train._base_.CARS : False
+2026-05-17 16:55:46,368 - DictFold - INFO - config.dataset.train.others = edict()
+2026-05-17 16:55:46,368 - DictFold - INFO - config.dataset.train.others.subset : train
+2026-05-17 16:55:46,368 - DictFold - INFO - config.dataset.train.others.bs : 4
+2026-05-17 16:55:46,368 - DictFold - INFO - config.dataset.val = edict()
+2026-05-17 16:55:46,368 - DictFold - INFO - config.dataset.val._base_ = edict()
+2026-05-17 16:55:46,368 - DictFold - INFO - config.dataset.val._base_.NAME : Catenary
+2026-05-17 16:55:46,368 - DictFold - INFO - config.dataset.val._base_.CATEGORY_FILE_PATH : /base/realpc/difficult/ours.json
+2026-05-17 16:55:46,368 - DictFold - INFO - config.dataset.val._base_.N_POINTS : 5000
+2026-05-17 16:55:46,368 - DictFold - INFO - config.dataset.val._base_.N_RENDERINGS : 245
+2026-05-17 16:55:46,368 - DictFold - INFO - config.dataset.val._base_.PARTIAL_POINTS_PATH : /base/realpc/difficult/%s/partial/%s/%s/%03d.pcd
+2026-05-17 16:55:46,368 - DictFold - INFO - config.dataset.val._base_.COMPLETE_POINTS_PATH : /base/realpc/difficult/%s/complete/%s/%s.pcd
+2026-05-17 16:55:46,368 - DictFold - INFO - config.dataset.val._base_.CARS : False
+2026-05-17 16:55:46,368 - DictFold - INFO - config.dataset.val.others = edict()
+2026-05-17 16:55:46,368 - DictFold - INFO - config.dataset.val.others.subset : test
+2026-05-17 16:55:46,368 - DictFold - INFO - config.dataset.test = edict()
+2026-05-17 16:55:46,368 - DictFold - INFO - config.dataset.test._base_ = edict()
+2026-05-17 16:55:46,368 - DictFold - INFO - config.dataset.test._base_.NAME : Catenary
+2026-05-17 16:55:46,368 - DictFold - INFO - config.dataset.test._base_.CATEGORY_FILE_PATH : /base/realpc/difficult/ours.json
+2026-05-17 16:55:46,368 - DictFold - INFO - config.dataset.test._base_.N_POINTS : 5000
+2026-05-17 16:55:46,369 - DictFold - INFO - config.dataset.test._base_.N_RENDERINGS : 245
+2026-05-17 16:55:46,369 - DictFold - INFO - config.dataset.test._base_.PARTIAL_POINTS_PATH : /home/tepper/base/realpc/difficult/%s/partial/%s/%s/%03d.pcd
+2026-05-17 16:55:46,369 - DictFold - INFO - config.dataset.test._base_.COMPLETE_POINTS_PATH : /home/tepper/base/realpc/difficult/%s/complete/%s/%s.pcd
+2026-05-17 16:55:46,369 - DictFold - INFO - config.dataset.test._base_.CARS : False
+2026-05-17 16:55:46,369 - DictFold - INFO - config.dataset.test.others = edict()
+2026-05-17 16:55:46,369 - DictFold - INFO - config.dataset.test.others.subset : test
+2026-05-17 16:55:46,369 - DictFold - INFO - config.model = edict()
+2026-05-17 16:55:46,369 - DictFold - INFO - config.model.NAME : DictFold
+2026-05-17 16:55:46,369 - DictFold - INFO - config.model.num_pred : 5000
+2026-05-17 16:55:46,369 - DictFold - INFO - config.model.num_seeds : 1024
+2026-05-17 16:55:46,369 - DictFold - INFO - config.model.dim_feat : 512
+2026-05-17 16:55:46,369 - DictFold - INFO - config.model.num_dicts : 128
+2026-05-17 16:55:46,369 - DictFold - INFO - config.model.upscales : [1, 4, 4]
+2026-05-17 16:55:46,369 - DictFold - INFO - config.model.sparse_expansion_lambda : 0.5
+2026-05-17 16:55:46,369 - DictFold - INFO - config.model.dense_expansion_lambda : 1.2
+2026-05-17 16:55:46,369 - DictFold - INFO - config.loss = edict()
+2026-05-17 16:55:46,369 - DictFold - INFO - config.loss.sparse_loss_weight : 1.0
+2026-05-17 16:55:46,369 - DictFold - INFO - config.loss.dense_loss_weight : 1.0
+2026-05-17 16:55:46,369 - DictFold - INFO - config.loss.dz_weight : 1.0
+2026-05-17 16:55:46,369 - DictFold - INFO - config.loss.orth_weight : 1.0
+2026-05-17 16:55:46,369 - DictFold - INFO - config.total_bs : 4
+2026-05-17 16:55:46,369 - DictFold - INFO - config.step_per_update : 1
+2026-05-17 16:55:46,370 - DictFold - INFO - config.max_epoch : 400
+2026-05-17 16:55:46,370 - DictFold - INFO - config.consider_metric : CDL1
+2026-05-17 16:55:46,370 - DictFold - INFO - Distributed training: False
+2026-05-17 16:55:46,370 - DictFold - INFO - Set random seed to 2023, deterministic: False
+2026-05-17 16:55:46,370 - DictFold - INFO - Tester start ... 
+2026-05-17 16:55:47,013 - DictFold - INFO - DictFold(
+  (feat_extractor): UNet(
+    (sa_module_1): PointNet_SA_Module_KNN(
+      (mlp_conv): Sequential(
+        (0): Conv2d(
+          (conv): Conv2d(6, 32, kernel_size=(1, 1), stride=(1, 1))
+          (bn): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+        (1): Conv2d(
+          (conv): Conv2d(32, 128, kernel_size=(1, 1), stride=(1, 1))
+          (bn): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+    )
+    (transformer_1): Transformer(
+      (conv_key): Conv1d(64, 64, kernel_size=(1,), stride=(1,))
+      (conv_query): Conv1d(64, 64, kernel_size=(1,), stride=(1,))
+      (conv_value): Conv1d(64, 64, kernel_size=(1,), stride=(1,))
+      (pos_mlp): Sequential(
+        (0): Conv2d(3, 64, kernel_size=(1, 1), stride=(1, 1))
+        (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU()
+        (3): Conv2d(64, 64, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (attn_mlp): Sequential(
+        (0): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1))
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU()
+        (3): Conv2d(256, 64, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (linear_start): Conv1d(128, 64, kernel_size=(1,), stride=(1,))
+      (linear_end): Conv1d(64, 128, kernel_size=(1,), stride=(1,))
+    )
+    (sa_module_2): PointNet_SA_Module_KNN(
+      (mlp_conv): Sequential(
+        (0): Conv2d(
+          (conv): Conv2d(131, 128, kernel_size=(1, 1), stride=(1, 1))
+          (bn): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+        (1): Conv2d(
+          (conv): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1))
+          (bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+    )
+    (transformer_2): Transformer(
+      (conv_key): Conv1d(64, 64, kernel_size=(1,), stride=(1,))
+      (conv_query): Conv1d(64, 64, kernel_size=(1,), stride=(1,))
+      (conv_value): Conv1d(64, 64, kernel_size=(1,), stride=(1,))
+      (pos_mlp): Sequential(
+        (0): Conv2d(3, 64, kernel_size=(1, 1), stride=(1, 1))
+        (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU()
+        (3): Conv2d(64, 64, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (attn_mlp): Sequential(
+        (0): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1))
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU()
+        (3): Conv2d(256, 64, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (linear_start): Conv1d(256, 64, kernel_size=(1,), stride=(1,))
+      (linear_end): Conv1d(64, 256, kernel_size=(1,), stride=(1,))
+    )
+    (sa_module_4): PointNet_SA_Module_KNN(
+      (mlp_conv): Sequential(
+        (0): Conv2d(
+          (conv): Conv2d(259, 384, kernel_size=(1, 1), stride=(1, 1))
+          (bn): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+        (1): Conv2d(
+          (conv): Conv2d(384, 512, kernel_size=(1, 1), stride=(1, 1))
+          (bn): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+    )
+    (ps_0): ConvTranspose1d(512, 256, kernel_size=(64,), stride=(1,))
+    (ps_1): ConvTranspose1d(256, 256, kernel_size=(2,), stride=(2,))
+    (ps_2): ConvTranspose1d(256, 128, kernel_size=(2,), stride=(2,))
+    (mlp_1): MLP_Res(
+      (conv_1): Conv1d(768, 256, kernel_size=(1,), stride=(1,))
+      (conv_2): Conv1d(256, 256, kernel_size=(1,), stride=(1,))
+      (conv_shortcut): Conv1d(768, 256, kernel_size=(1,), stride=(1,))
+    )
+    (refine_1): FeaRefine(
+      (dict_embed): Embedding(256, 128)
+      (query): Conv1d(256, 64, kernel_size=(1,), stride=(1,))
+      (key): Conv1d(256, 64, kernel_size=(1,), stride=(1,))
+    )
+    (refine_2): FeaRefine(
+      (dict_embed): Embedding(128, 64)
+      (query): Conv1d(128, 64, kernel_size=(1,), stride=(1,))
+      (key): Conv1d(128, 64, kernel_size=(1,), stride=(1,))
+    )
+    (mlp_3): MLP_Res(
+      (conv_1): Conv1d(128, 32, kernel_size=(1,), stride=(1,))
+      (conv_2): Conv1d(32, 3, kernel_size=(1,), stride=(1,))
+      (conv_shortcut): Conv1d(128, 3, kernel_size=(1,), stride=(1,))
+    )
+  )
+  (decoder): FoldingNet(
+    (folding1): Sequential(
+      (0): Conv2d(130, 512, kernel_size=(1, 1), stride=(1, 1))
+      (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU(inplace=True)
+      (3): Conv2d(512, 512, kernel_size=(1, 1), stride=(1, 1))
+      (4): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (5): ReLU(inplace=True)
+      (6): Conv2d(512, 3, kernel_size=(1, 1), stride=(1, 1))
+    )
+    (folding2): Sequential(
+      (0): Conv2d(131, 512, kernel_size=(1, 1), stride=(1, 1))
+      (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU(inplace=True)
+      (3): Conv2d(512, 512, kernel_size=(1, 1), stride=(1, 1))
+      (4): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (5): ReLU(inplace=True)
+      (6): Conv2d(512, 3, kernel_size=(1, 1), stride=(1, 1))
+    )
+  )
+  (loss_func): ChamferDistanceL1()
+  (loss_split): ChamferDistanceL1_split()
+)
+2026-05-17 16:55:47,014 - DictFold - INFO - Loading weights from ./experiments/DictFold/ours_models/realpc_full_odgnet/ckpt-best.pth...
+2026-05-17 16:55:47,051 - DictFold - INFO - ckpts @ 400 epoch( performance = {'F-Score': 0.8274432350400829, 'CDL1': 27.134594551588943, 'CDL2': 31.01433594985035})
+2026-05-17 16:56:20,202 - DictFold - INFO - [TEST] Metrics = ['0.8262', '17.9444', '15.8120']
+2026-05-17 16:56:20,204 - DictFold - INFO - ============================ TEST RESULTS ============================
+2026-05-17 16:56:20,204 - DictFold - INFO - Taxonomy	#Sample	F-Score	CDL1	CDL2	#ModelName	
+2026-05-17 16:56:20,204 - DictFold - INFO - chine_0	84	0.848 	7.037 	0.236 	chine_0	
+2026-05-17 16:56:20,204 - DictFold - INFO - chine_1	12	0.792 	8.626 	0.445 	chine_1	
+2026-05-17 16:56:20,204 - DictFold - INFO - chine_2	12	0.811 	8.386 	0.455 	chine_2	
+2026-05-17 16:56:20,204 - DictFold - INFO - chine_3	3	0.823 	7.970 	0.561 	chine_3	
+2026-05-17 16:56:20,204 - DictFold - INFO - dutch_0	15	0.765 	20.944 	7.604 	dutch_0	
+2026-05-17 16:56:20,204 - DictFold - INFO - dutch_1	11	0.674 	29.031 	10.152 	dutch_1	
+2026-05-17 16:56:20,204 - DictFold - INFO - dutch_2	2	0.861 	7.636 	0.542 	dutch_2	
+2026-05-17 16:56:20,204 - DictFold - INFO - dutch_3	6	0.758 	27.265 	13.712 	dutch_3	
+2026-05-17 16:56:20,205 - DictFold - INFO - dutch_4	2	0.714 	19.984 	5.627 	dutch_4	
+2026-05-17 16:56:20,205 - DictFold - INFO - hung_0	1	0.910 	48.239 	71.559 	hung_0	
+2026-05-17 16:56:20,205 - DictFold - INFO - hung_1	1	0.801 	38.669 	36.689 	hung_1	
+2026-05-17 16:56:20,205 - DictFold - INFO - hung_2	5	0.918 	54.505 	95.721 	hung_2	
+2026-05-17 16:56:20,205 - DictFold - INFO - hung_3	12	0.853 	53.748 	88.399 	hung_3	
+2026-05-17 16:56:20,205 - DictFold - INFO - hung_4	4	0.891 	55.405 	95.381 	hung_4	
+2026-05-17 16:56:20,205 - DictFold - INFO - hung_5	1	0.917 	56.154 	99.935 	hung_5	
+2026-05-17 16:56:20,205 - DictFold - INFO - hung_6	2	0.827 	44.826 	55.604 	hung_6	
+2026-05-17 16:56:20,205 - DictFold - INFO - hung_7	2	0.857 	47.846 	66.358 	hung_7	
+2026-05-17 16:56:20,205 - DictFold - INFO - sncf_0	6	0.878 	6.623 	0.193 	sncf_0	
+2026-05-17 16:56:20,205 - DictFold - INFO - sncf_1	2	0.866 	9.595 	1.262 	sncf_1	
+2026-05-17 16:56:20,205 - DictFold - INFO - sncf_2	9	0.865 	6.876 	0.283 	sncf_2	
+2026-05-17 16:56:20,205 - DictFold - INFO - sncf_3	1	0.747 	10.459 	0.585 	sncf_3	
+2026-05-17 16:56:20,205 - DictFold - INFO - Overall 		0.826 	17.944 	15.812 	

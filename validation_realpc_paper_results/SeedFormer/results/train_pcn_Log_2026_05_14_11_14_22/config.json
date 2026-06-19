@@ -15,11 +15,11 @@
             "PARTIAL_POINTS_PATH": "/path/to/datasets/Completion3D/%s/partial/%s/%s.h5"
         },
         "SHAPENET": {
-            "CATEGORY_FILE_PATH": "/home/tepper/base/realpc/difficult/ours.json",
-            "COMPLETE_POINTS_PATH": "/home/tepper/base/realpc/difficult/%s/complete/%s/%s.pcd",
+            "CATEGORY_FILE_PATH": "/base/realpc/difficult/ours.json",
+            "COMPLETE_POINTS_PATH": "/base/realpc/difficult/%s/complete/%s/%s.pcd",
             "N_POINTS": 5000,
             "N_RENDERINGS": 245,
-            "PARTIAL_POINTS_PATH": "/home/tepper/base/realpc/difficult/%s/partial/%s/%s/%03d.pcd"
+            "PARTIAL_POINTS_PATH": "/base/realpc/difficult/%s/partial/%s/%s/%03d.pcd"
         }
     },
     "DIR": {

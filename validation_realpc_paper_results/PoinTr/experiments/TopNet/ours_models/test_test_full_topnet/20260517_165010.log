@@ -1,0 +1,105 @@
+2026-05-17 16:50:10,728 - TopNet - INFO - Copy the Config file from ./cfgs/ours_models/TopNet.yaml to ./experiments/TopNet/ours_models/test_test_full_topnet/config.yaml
+2026-05-17 16:50:10,728 - TopNet - INFO - args.config : ./cfgs/ours_models/TopNet.yaml
+2026-05-17 16:50:10,728 - TopNet - INFO - args.launcher : none
+2026-05-17 16:50:10,728 - TopNet - INFO - args.local_rank : 0
+2026-05-17 16:50:10,728 - TopNet - INFO - args.num_workers : 4
+2026-05-17 16:50:10,728 - TopNet - INFO - args.seed : 0
+2026-05-17 16:50:10,728 - TopNet - INFO - args.deterministic : False
+2026-05-17 16:50:10,728 - TopNet - INFO - args.sync_bn : False
+2026-05-17 16:50:10,728 - TopNet - INFO - args.exp_name : test_test_full_topnet
+2026-05-17 16:50:10,728 - TopNet - INFO - args.start_ckpts : None
+2026-05-17 16:50:10,728 - TopNet - INFO - args.ckpts : ./experiments/TopNet/ours_models/realpc_full_topnet/ckpt-best.pth
+2026-05-17 16:50:10,728 - TopNet - INFO - args.val_freq : 1
+2026-05-17 16:50:10,728 - TopNet - INFO - args.resume : False
+2026-05-17 16:50:10,728 - TopNet - INFO - args.test : True
+2026-05-17 16:50:10,729 - TopNet - INFO - args.mode : None
+2026-05-17 16:50:10,729 - TopNet - INFO - args.experiment_path : ./experiments/TopNet/ours_models/test_test_full_topnet
+2026-05-17 16:50:10,729 - TopNet - INFO - args.tfboard_path : ./experiments/TopNet/ours_models/TFBoard/test_test_full_topnet
+2026-05-17 16:50:10,729 - TopNet - INFO - args.log_name : TopNet
+2026-05-17 16:50:10,729 - TopNet - INFO - args.use_gpu : True
+2026-05-17 16:50:10,729 - TopNet - INFO - args.distributed : False
+2026-05-17 16:50:10,729 - TopNet - INFO - config.optimizer = edict()
+2026-05-17 16:50:10,729 - TopNet - INFO - config.optimizer.type : Adam
+2026-05-17 16:50:10,729 - TopNet - INFO - config.optimizer.kwargs = edict()
+2026-05-17 16:50:10,729 - TopNet - INFO - config.optimizer.kwargs.lr : 0.001
+2026-05-17 16:50:10,729 - TopNet - INFO - config.optimizer.kwargs.weight_decay : 0
+2026-05-17 16:50:10,729 - TopNet - INFO - config.scheduler = edict()
+2026-05-17 16:50:10,729 - TopNet - INFO - config.scheduler.type : StepLR
+2026-05-17 16:50:10,729 - TopNet - INFO - config.scheduler.kwargs = edict()
+2026-05-17 16:50:10,729 - TopNet - INFO - config.scheduler.kwargs.step_size : 50
+2026-05-17 16:50:10,729 - TopNet - INFO - config.scheduler.kwargs.gamma : 0.5
+2026-05-17 16:50:10,729 - TopNet - INFO - config.dataset = edict()
+2026-05-17 16:50:10,729 - TopNet - INFO - config.dataset.train = edict()
+2026-05-17 16:50:10,729 - TopNet - INFO - config.dataset.train._base_ = edict()
+2026-05-17 16:50:10,729 - TopNet - INFO - config.dataset.train._base_.NAME : Catenary
+2026-05-17 16:50:10,729 - TopNet - INFO - config.dataset.train._base_.CATEGORY_FILE_PATH : /base/realpc/difficult/ours.json
+2026-05-17 16:50:10,730 - TopNet - INFO - config.dataset.train._base_.N_POINTS : 5000
+2026-05-17 16:50:10,730 - TopNet - INFO - config.dataset.train._base_.N_RENDERINGS : 245
+2026-05-17 16:50:10,730 - TopNet - INFO - config.dataset.train._base_.PARTIAL_POINTS_PATH : /base/realpc/difficult/%s/partial/%s/%s/%03d.pcd
+2026-05-17 16:50:10,730 - TopNet - INFO - config.dataset.train._base_.COMPLETE_POINTS_PATH : /base/realpc/difficult/%s/complete/%s/%s.pcd
+2026-05-17 16:50:10,730 - TopNet - INFO - config.dataset.train._base_.CARS : False
+2026-05-17 16:50:10,730 - TopNet - INFO - config.dataset.train.others = edict()
+2026-05-17 16:50:10,730 - TopNet - INFO - config.dataset.train.others.subset : train
+2026-05-17 16:50:10,730 - TopNet - INFO - config.dataset.train.others.bs : 4
+2026-05-17 16:50:10,730 - TopNet - INFO - config.dataset.val = edict()
+2026-05-17 16:50:10,730 - TopNet - INFO - config.dataset.val._base_ = edict()
+2026-05-17 16:50:10,730 - TopNet - INFO - config.dataset.val._base_.NAME : Catenary
+2026-05-17 16:50:10,730 - TopNet - INFO - config.dataset.val._base_.CATEGORY_FILE_PATH : /base/realpc/difficult/ours.json
+2026-05-17 16:50:10,730 - TopNet - INFO - config.dataset.val._base_.N_POINTS : 5000
+2026-05-17 16:50:10,730 - TopNet - INFO - config.dataset.val._base_.N_RENDERINGS : 245
+2026-05-17 16:50:10,730 - TopNet - INFO - config.dataset.val._base_.PARTIAL_POINTS_PATH : /base/realpc/difficult/%s/partial/%s/%s/%03d.pcd
+2026-05-17 16:50:10,730 - TopNet - INFO - config.dataset.val._base_.COMPLETE_POINTS_PATH : /base/realpc/difficult/%s/complete/%s/%s.pcd
+2026-05-17 16:50:10,730 - TopNet - INFO - config.dataset.val._base_.CARS : False
+2026-05-17 16:50:10,730 - TopNet - INFO - config.dataset.val.others = edict()
+2026-05-17 16:50:10,730 - TopNet - INFO - config.dataset.val.others.subset : test
+2026-05-17 16:50:10,730 - TopNet - INFO - config.dataset.test = edict()
+2026-05-17 16:50:10,730 - TopNet - INFO - config.dataset.test._base_ = edict()
+2026-05-17 16:50:10,730 - TopNet - INFO - config.dataset.test._base_.NAME : Catenary
+2026-05-17 16:50:10,731 - TopNet - INFO - config.dataset.test._base_.CATEGORY_FILE_PATH : /home/tepper/base/realpc/difficult/ours.json
+2026-05-17 16:50:10,731 - TopNet - INFO - config.dataset.test._base_.N_POINTS : 5000
+2026-05-17 16:50:10,731 - TopNet - INFO - config.dataset.test._base_.N_RENDERINGS : 245
+2026-05-17 16:50:10,731 - TopNet - INFO - config.dataset.test._base_.PARTIAL_POINTS_PATH : /home/tepper/base/realpc/difficult/%s/partial/%s/%s/%03d.pcd
+2026-05-17 16:50:10,731 - TopNet - INFO - config.dataset.test._base_.COMPLETE_POINTS_PATH : /home/tepper/base/realpc/difficult/%s/complete/%s/%s.pcd
+2026-05-17 16:50:10,731 - TopNet - INFO - config.dataset.test._base_.CARS : False
+2026-05-17 16:50:10,731 - TopNet - INFO - config.dataset.test.others = edict()
+2026-05-17 16:50:10,731 - TopNet - INFO - config.dataset.test.others.subset : test
+2026-05-17 16:50:10,731 - TopNet - INFO - config.model = edict()
+2026-05-17 16:50:10,731 - TopNet - INFO - config.model.NAME : TopNet
+2026-05-17 16:50:10,731 - TopNet - INFO - config.model.node_feature : 8
+2026-05-17 16:50:10,731 - TopNet - INFO - config.model.num_pred : 8192
+2026-05-17 16:50:10,731 - TopNet - INFO - config.model.encoder_feature : 1024
+2026-05-17 16:50:10,731 - TopNet - INFO - config.model.nlevels : 8
+2026-05-17 16:50:10,731 - TopNet - INFO - config.total_bs : 4
+2026-05-17 16:50:10,731 - TopNet - INFO - config.step_per_update : 1
+2026-05-17 16:50:10,731 - TopNet - INFO - config.max_epoch : 150
+2026-05-17 16:50:10,731 - TopNet - INFO - config.consider_metric : CDL1
+2026-05-17 16:50:10,731 - TopNet - INFO - Distributed training: False
+2026-05-17 16:50:10,731 - TopNet - INFO - Set random seed to 0, deterministic: False
+2026-05-17 16:50:10,732 - TopNet - INFO - Tester start ... 
+2026-05-17 16:50:10,777 - TopNet - INFO - Loading weights from ./experiments/TopNet/ours_models/realpc_full_topnet/ckpt-best.pth...
+2026-05-17 16:50:10,852 - TopNet - INFO - ckpts @ 135 epoch( performance = {'F-Score': 0.03111127393402993, 'CDL1': 84.74730672521753, 'CDL2': 32.64140697254853, 'EMDistance': 0.0})
+2026-05-17 16:50:15,483 - TopNet - INFO - [TEST] Metrics = ['0.0311', '84.7475', '32.6414', '0.0000']
+2026-05-17 16:50:15,484 - TopNet - INFO - ============================ TEST RESULTS ============================
+2026-05-17 16:50:15,484 - TopNet - INFO - Taxonomy	#Sample	F-Score	CDL1	CDL2	EMDistance	#ModelName	
+2026-05-17 16:50:15,484 - TopNet - INFO - chine_0	84	0.068 	38.215 	4.948 	0.000 	chine_0	
+2026-05-17 16:50:15,484 - TopNet - INFO - chine_1	12	0.037 	44.189 	6.121 	0.000 	chine_1	
+2026-05-17 16:50:15,484 - TopNet - INFO - chine_2	12	0.049 	45.730 	6.885 	0.000 	chine_2	
+2026-05-17 16:50:15,484 - TopNet - INFO - chine_3	3	0.059 	37.572 	5.395 	0.000 	chine_3	
+2026-05-17 16:50:15,484 - TopNet - INFO - dutch_0	15	0.021 	102.642 	37.425 	0.000 	dutch_0	
+2026-05-17 16:50:15,484 - TopNet - INFO - dutch_1	11	0.004 	154.534 	105.667 	0.000 	dutch_1	
+2026-05-17 16:50:15,485 - TopNet - INFO - dutch_2	2	0.046 	59.383 	15.428 	0.000 	dutch_2	
+2026-05-17 16:50:15,485 - TopNet - INFO - dutch_3	6	0.005 	109.406 	46.004 	0.000 	dutch_3	
+2026-05-17 16:50:15,485 - TopNet - INFO - dutch_4	2	0.007 	202.973 	197.474 	0.000 	dutch_4	
+2026-05-17 16:50:15,485 - TopNet - INFO - hung_0	1	0.000 	136.900 	41.403 	0.000 	hung_0	
+2026-05-17 16:50:15,485 - TopNet - INFO - hung_1	1	0.000 	70.279 	16.036 	0.000 	hung_1	
+2026-05-17 16:50:15,485 - TopNet - INFO - hung_2	5	0.023 	91.181 	22.078 	0.000 	hung_2	
+2026-05-17 16:50:15,485 - TopNet - INFO - hung_3	12	0.003 	110.389 	31.589 	0.000 	hung_3	
+2026-05-17 16:50:15,485 - TopNet - INFO - hung_4	4	0.008 	119.806 	35.018 	0.000 	hung_4	
+2026-05-17 16:50:15,486 - TopNet - INFO - hung_5	1	0.002 	55.928 	7.807 	0.000 	hung_5	
+2026-05-17 16:50:15,486 - TopNet - INFO - hung_6	2	0.000 	151.802 	56.787 	0.000 	hung_6	
+2026-05-17 16:50:15,486 - TopNet - INFO - hung_7	2	0.005 	87.516 	25.799 	0.000 	hung_7	
+2026-05-17 16:50:15,486 - TopNet - INFO - sncf_0	6	0.098 	32.698 	3.791 	0.000 	sncf_0	
+2026-05-17 16:50:15,486 - TopNet - INFO - sncf_1	2	0.123 	37.108 	5.786 	0.000 	sncf_1	
+2026-05-17 16:50:15,486 - TopNet - INFO - sncf_2	9	0.057 	37.552 	4.521 	0.000 	sncf_2	
+2026-05-17 16:50:15,486 - TopNet - INFO - sncf_3	1	0.039 	53.896 	9.506 	0.000 	sncf_3	
+2026-05-17 16:50:15,486 - TopNet - INFO - Overall 		0.031 	84.747 	32.641 	0.000 	
