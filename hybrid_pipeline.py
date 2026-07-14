@@ -11,6 +11,7 @@ from tqdm import tqdm
 from collections import defaultdict
 
 
+#Categories of the realpc Dataset
 REALPC_CATEGORIES = [
     'chine_0', 'chine_1', 'chine_2', 'chine_3',
     'dutch_0', 'dutch_1', 'dutch_2', 'dutch_3', 'dutch_4',
@@ -18,8 +19,10 @@ REALPC_CATEGORIES = [
     'sncf_0', 'sncf_1', 'sncf_2', 'sncf_3',
 ]
 
+
+# Data Loading
 def load_pdr_completions(h5_path):
-    """Load PDR-generated completions from .h5 file."""
+    """Load PDR-generated completions from .h5 file"""
     with h5py.File(h5_path, 'r') as f:
         data = np.array(f['data'])
     print(f"Loaded {data.shape[0]} completions with {data.shape[1]} points from {h5_path}")
@@ -27,7 +30,7 @@ def load_pdr_completions(h5_path):
 
 
 def load_gt_from_realpc(data_dir, split='test', scans_per_object=1):
-    """Load GT point clouds from RealPC dataset.
+    """Load GT point clouds from RealPC dataset
 
     Args:
         data_dir: Root directory of RealPC dataset
@@ -36,11 +39,14 @@ def load_gt_from_realpc(data_dir, split='test', scans_per_object=1):
             1 = one GT per object (for subset evaluation)
             26 = repeat each GT 26 times (for full evaluation with all scans)
     """
+
+    # read all elements out of the realpc dataset
     complete_dir = os.path.join(data_dir, split, 'complete')
     gt_list = []
     names = []
     labels = []
     objects_count = 0
+
 
     for cat in sorted(os.listdir(complete_dir)):
         if cat not in REALPC_CATEGORIES:
@@ -55,6 +61,8 @@ def load_gt_from_realpc(data_dir, split='test', scans_per_object=1):
             pcd = o3d.io.read_point_cloud(os.path.join(cat_dir, f))
             pts = np.asarray(pcd.points, dtype=np.float32)
             objects_count += 1
+            # Repeat GT per scan so that prediction index i
+            # corresponds to the same object
             for s in range(scans_per_object):
                 gt_list.append(pts)
                 if scans_per_object > 1:
@@ -67,14 +75,15 @@ def load_gt_from_realpc(data_dir, split='test', scans_per_object=1):
     return gt_list, names, labels
 
 
-## Noise
+## Add optional Gaussian noise, following PPSurf convention
 def add_gaussian_noise(points, sigma_ratio=0.01):
-    """Add Gaussian noise relative to bounding box size L.
+    """Add Gaussian noise relative to bounding box size L
 
     PPSurf convention:
         0.0  = no noise
         0.01 = medium noise (0.01L)
         0.05 = high noise (0.05L)
+
     """
     if sigma_ratio <= 0:
         return points.copy()
@@ -82,17 +91,18 @@ def add_gaussian_noise(points, sigma_ratio=0.01):
     L = bbox.max()
     sigma = sigma_ratio * L
     noise = np.random.normal(0, sigma, size=points.shape).astype(np.float32)
+
+    #retunr noisy point cloud
     return points + noise
 
 
 ## PPSurf call
 def run_ppsurf(input_path, output_dir, ppsurf_dir, resolution=129, device=0):
-    """Run PPSurf via subprocess."""
+    """Run PPSurf via subprocess"""
 
     os.makedirs(output_dir, exist_ok=True)
-
+    # PPSurf uses its own Python environment (.venv_pps)
     ppsurf_dir = os.path.abspath(ppsurf_dir)
-
     ppsurf_python = os.path.join(
         ppsurf_dir,
         '.venv_pps',
@@ -100,6 +110,8 @@ def run_ppsurf(input_path, output_dir, ppsurf_dir, resolution=129, device=0):
         'python'
     )
 
+    # Pass 'pps.py' instead of full path because PPSurf
+    # internally validates sys.argv[0] == 'pps.py'
     ppsurf_script = os.path.join(ppsurf_dir, 'pps.py')
     cmd = [
         ppsurf_python, 'pps.py', 'rec',
@@ -109,6 +121,7 @@ def run_ppsurf(input_path, output_dir, ppsurf_dir, resolution=129, device=0):
         '--trainer.devices', '1',
     ]
 
+    # subprocess call
     try:
         result = subprocess.run(
             cmd, cwd=ppsurf_dir,
@@ -130,7 +143,7 @@ def run_ppsurf(input_path, output_dir, ppsurf_dir, resolution=129, device=0):
     if os.path.exists(candidate):
         return candidate
 
-    # Fallback: recursive search
+    # Fallback: recursive search for .ply
     for root, dirs, files in os.walk(output_dir):
         for f in files:
             if f.endswith('.ply'):
@@ -139,9 +152,9 @@ def run_ppsurf(input_path, output_dir, ppsurf_dir, resolution=129, device=0):
     print(f"Warning: No mesh found for {input_path}")
     return None
 
-## Converter from mesh to point cloud using sample
+## Converter from mesh to point cloud using area-weighted sampling
 def mesh_to_pointcloud(mesh_path, n_points=5000):
-    """Sample point cloud from mesh using Trimesh."""
+    """Sample point cloud from mesh using Trimesh"""
     try:
         mesh = trimesh.load(mesh_path)
         if isinstance(mesh, trimesh.Scene):
@@ -154,53 +167,21 @@ def mesh_to_pointcloud(mesh_path, n_points=5000):
         print(f"Error sampling mesh {mesh_path}: {e}")
         return None
 
-### Metrics
-
+# Metric
 def chamfer_distance(pred, gt):
-    """Compute CD-L1 and CD-L2."""
+    """Compute Chamfer Distance (L1 and L2) between two point clouds"""
     with torch.no_grad():
-        diff = pred.unsqueeze(1) - gt.unsqueeze(0)
-        dist = torch.norm(diff, dim=-1)
-        min_p2g, _ = torch.min(dist, dim=1)
-        min_g2p, _ = torch.min(dist, dim=0)
+        diff = pred.unsqueeze(1) - gt.unsqueeze(0)  # (N, M, 3)
+        dist = torch.norm(diff, dim=-1)  # (N, M)
+        min_p2g, _ = torch.min(dist, dim=1)  # (N,) pred->gt
+        min_g2p, _ = torch.min(dist, dim=0)  # (M,) gt->pred
         cd_l1 = 0.5 * (torch.mean(min_p2g) + torch.mean(min_g2p))
         cd_l2 = 0.5 * (torch.mean(min_p2g ** 2) + torch.mean(min_g2p ** 2))
     return cd_l1.item(), cd_l2.item()
 
 
-def compute_1nna(gen_clouds, ref_clouds, device='cuda'):
-    """Compute 1-Nearest Neighbor Accuracy. Ideal = 50%."""
-    n_gen = len(gen_clouds)
-    n_ref = len(ref_clouds)
-    n_total = n_gen + n_ref
-
-    all_clouds = gen_clouds + ref_clouds
-    labels = [0] * n_gen + [1] * n_ref
-
-    print("Computing pairwise distances for 1-NNA...")
-    dist_matrix = np.zeros((n_total, n_total))
-
-    for i in tqdm(range(n_total)):
-        for j in range(i + 1, n_total):
-            pred_t = torch.from_numpy(all_clouds[i]).float().to(device)
-            gt_t = torch.from_numpy(all_clouds[j]).float().to(device)
-            _, cd_l2 = chamfer_distance(pred_t, gt_t)
-            dist_matrix[i, j] = cd_l2
-            dist_matrix[j, i] = cd_l2
-
-    correct = 0
-    for i in range(n_total):
-        dists = dist_matrix[i].copy()
-        dists[i] = np.inf
-        nn_idx = np.argmin(dists)
-        if labels[i] == labels[nn_idx]:
-            correct += 1
-
-    return correct / n_total
-
-
 def normalize_pointcloud(points):
-    """Normalize: center and scale to unit sphere."""
+    """Normalize: center and scale to unit sphere"""
     centroid = np.mean(points, axis=0, keepdims=True)
     points_centered = points - centroid
     max_dist = np.max(np.linalg.norm(points_centered, axis=1))
@@ -249,9 +230,9 @@ def main():
 
     args = parser.parse_args()
 
-    # ========================================================
+
     # Subset creation mode
-    # ========================================================
+    # create 193 representative samples (1 per object)
     if args.create_subset:
         with h5py.File(args.pdr_completions, 'r') as f:
             data = np.array(f['data'])
@@ -261,13 +242,12 @@ def main():
         print(f"Created subset: {data.shape} → {subset.shape}, saved to {args.subset_output}")
         return
 
-    # ========================================================
-    # Validate args
-    # ========================================================
+    # Validation of the arguments
     if args.realpc_dir is None or args.ppsurf_dir is None:
         parser.error("--realpc_dir and --ppsurf_dir are required for pipeline mode")
 
     os.makedirs(args.output_dir, exist_ok=True)
+    # create directories if noise id activated
     noisy_dir = os.path.join(args.output_dir, '01_noisy')
     ppsurf_mesh_dir = os.path.join(args.output_dir, '02_ppsurf_meshes')
     final_pc_dir = os.path.join(args.output_dir, '03_final_pointclouds')
@@ -275,19 +255,21 @@ def main():
     os.makedirs(ppsurf_mesh_dir, exist_ok=True)
     os.makedirs(final_pc_dir, exist_ok=True)
 
+    # check if the given gpu is available if not cpu
     torch_device = torch.device(f'cuda:{args.device}' if torch.cuda.is_available() else 'cpu')
 
-    # ========================================================
+
     # Step 1: Load data
-    # ========================================================
     print("=" * 60)
     print("Step 1: Loading data")
     print("=" * 60)
 
+    # Loads PDR completions and GT
     pdr_data = load_pdr_completions(args.pdr_completions)
     gt_list, gt_names, gt_labels = load_gt_from_realpc(
         args.realpc_dir, split='test', scans_per_object=args.scans_per_object)
 
+    # saftey check if the number of predictions matches the GT count
     if len(pdr_data) != len(gt_list):
         print(f"WARNING: PDR completions ({len(pdr_data)}) != GT count ({len(gt_list)})")
         min_count = min(len(pdr_data), len(gt_list))
@@ -298,42 +280,46 @@ def main():
 
     n_samples = len(pdr_data)
 
-    # ========================================================
-    # Step 2: Gaussian Noise
-    # ========================================================
+
+    # Step 2: Add optional Gaussian Noise
     print("\n" + "=" * 60)
     noise_label = f"σ={args.noise_sigma}L" if not args.skip_noise else "skipped"
     print(f"Step 2: Gaussian noise ({noise_label})")
     print("=" * 60)
 
     noisy_data = []
+    # Each completion is individually noised and saved as .npy
     for i, pc in enumerate(tqdm(pdr_data, desc="Noise")):
         noisy_pc = pc.copy() if args.skip_noise else add_gaussian_noise(pc, sigma_ratio=args.noise_sigma)
         np.save(os.path.join(noisy_dir, f"completion_{i:04d}.npy"), noisy_pc)
         noisy_data.append(noisy_pc)
 
-    # ========================================================
-    # Step 3+4: PPSurf → Mesh → Point Cloud
-    # ========================================================
+
+    #Step 3+4: PPSurf → Mesh → Point Cloud
+
+    #when skip_ppsurf is set, the PDR output is used directly
     if not args.skip_ppsurf:
         print("\n" + "=" * 60)
-        print(f"Step 3+4: PPSurf (res={args.ppsurf_resolution}) → {args.n_points} pts")
+        print(f"Step 3+4: PPSurf (res={args.ppsurf_resolution}) -> {args.n_points} pts")
         print("=" * 60)
 
         final_pcs = []
-        for i in tqdm(range(n_samples), desc="PPSurf + Mesh→PC"):
+        for i in tqdm(range(n_samples), desc="PPSurf + Mesh -> PC"):
             input_path = os.path.abspath(os.path.join(noisy_dir, f"completion_{i:04d}.npy"))
             sample_out_dir = os.path.abspath(os.path.join(ppsurf_mesh_dir, f"completion_{i:04d}"))
 
+            #PPSurf call
             mesh_path = run_ppsurf(
                 input_path, sample_out_dir, args.ppsurf_dir,
                 resolution=args.ppsurf_resolution, device=args.device
             )
 
+            # if ppsurf doesn't generate something continue
             if mesh_path is None:
                 final_pcs.append(None)
                 continue
 
+            #Sample point cloud from mesh
             pc = mesh_to_pointcloud(mesh_path, n_points=args.n_points)
             if pc is not None:
                 np.save(os.path.join(final_pc_dir, f"final_{i:04d}.npy"), pc)
@@ -342,9 +328,8 @@ def main():
         print("\n  Skipping PPSurf — evaluating PDR output directly")
         final_pcs = [pc.copy() for pc in noisy_data]
 
-    # ========================================================
+
     # Step 5: Evaluation
-    # ========================================================
     print("\n" + "=" * 60)
     print("Step 5: Evaluation")
     print("=" * 60)
@@ -363,7 +348,7 @@ def main():
                 'cd_l1': None, 'cd_l2': None
             })
             continue
-
+        #normalization of both side
         pred_norm = normalize_pointcloud(final_pcs[i])
         gt_norm = normalize_pointcloud(gt_list[i])
 
@@ -381,16 +366,14 @@ def main():
             'cd_l1': cd_l1, 'cd_l2': cd_l2
         })
 
-    # ========================================================
     # Results
-    # ========================================================
     print("\n" + "=" * 60)
     print(f"OVERALL RESULTS ({len(cd_l1_list)}/{n_samples} samples)")
     print("=" * 60)
     print(f"  CD-L1:  {np.mean(cd_l1_list):.6f} (± {np.std(cd_l1_list):.6f})")
     print(f"  CD-L2:  {np.mean(cd_l2_list):.6f} (± {np.std(cd_l2_list):.6f})")
 
-    # Per-Category
+    #Aggregate per category
     cat_results = defaultdict(lambda: {'cd_l1': [], 'cd_l2': [], 'count': 0})
     for s in per_sample:
         if s['cd_l1'] is not None:
@@ -422,15 +405,8 @@ def main():
 
     print(f"\n{'MEAN':<12} {np.mean(cd_l1_list):>12.6f} {np.mean(cd_l2_list):>12.6f}")
 
-    # 1-NNA
-    if args.compute_1nna and len(valid_gen_pcs) > 1:
-        print("\nComputing 1-NNA...")
-        nna = compute_1nna(valid_gen_pcs, valid_gt_pcs, device=torch_device)
-        print(f"  1-NNA:  {nna:.4f} (ideal: 0.5)")
 
-    # ========================================================
     # Save results
-    # ========================================================
     results = {
         'overall': {
             'cd_l1_mean': float(np.mean(cd_l1_list)),
@@ -453,8 +429,6 @@ def main():
         'per_sample': per_sample,
     }
 
-    if args.compute_1nna and len(valid_gen_pcs) > 1:
-        results['overall']['1nna'] = float(nna)
 
     for cat in sorted(cat_results.keys()):
         r = cat_results[cat]
@@ -507,7 +481,7 @@ def main():
             np.save(os.path.join(sample_dir, f"{name}_pred.npy"), final_pcs[i])
             np.save(os.path.join(sample_dir, f"{name}_gt.npy"), gt_list[i])
 
-    print("\nDone!")
+    print("\nFinish")
 
 
 if __name__ == '__main__':

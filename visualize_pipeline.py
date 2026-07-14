@@ -1,10 +1,3 @@
-"""
-Visualize all pipeline steps as interactive HTML files.
-Each step is saved as a separate HTML file that can be opened in a browser.
-
-Requires: pip install plotly
-"""
-
 import numpy as np
 import h5py
 import trimesh
@@ -12,13 +5,9 @@ import argparse
 import os
 import sys
 import json
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
 
-try:
-    import plotly.graph_objects as go
-    from plotly.subplots import make_subplots
-except ImportError:
-    print("Please install plotly: pip install plotly --break-system-packages")
-    sys.exit(1)
 
 
 def compute_cd(pred, gt):
