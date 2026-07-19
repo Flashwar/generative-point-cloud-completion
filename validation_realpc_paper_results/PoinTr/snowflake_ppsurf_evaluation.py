@@ -385,6 +385,7 @@ def main():
             exported.append({**{k: v for k, v in meta.items()
                                  if k not in ('gt', 'partial', 'snowflake_pred', 'noisy_pred')},
                               'rank': 'best', 'position': rank, 'cd_l1': cd_l1})
+
         #Save worst samples with all pipeline stages
         for rank, (i, cd_l1) in enumerate(reversed(worst_entries)):
             meta = sample_meta[i]
